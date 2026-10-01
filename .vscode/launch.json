@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "Backend (FastAPI :8000)", "type": "debugpy", "request": "launch", "module": "uvicorn",
+      "args": ["backend.app.main:app", "--reload", "--port", "8000"], "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}" }, "jinja": true },
+    { "name": "ML: 1 Generate dataset", "type": "debugpy", "request": "launch", "module": "ml.generate_dataset", "cwd": "${workspaceFolder}" },
+    { "name": "ML: 2 Check adapter on one PDF", "type": "debugpy", "request": "launch", "module": "ml.pipeline",
+      "args": ["--check", "${input:pdfPath}"], "cwd": "${workspaceFolder}" },
+    { "name": "ML: 3 Build feature tables", "type": "debugpy", "request": "launch", "module": "ml.pipeline",
+      "args": ["--build"], "cwd": "${workspaceFolder}" },
+    { "name": "ML: 4 Train", "type": "debugpy", "request": "launch", "module": "ml.train", "cwd": "${workspaceFolder}" },
+    { "name": "ML: 5 Evaluate (+LOF)", "type": "debugpy", "request": "launch", "module": "ml.evaluate",
+      "args": ["--compare"], "cwd": "${workspaceFolder}" }
+  ],
+  "inputs": [
+    { "id": "pdfPath", "type": "promptString", "description": "PDF to test the adapter on", "default": "data/normal/doc_001.pdf" }
+  ]
+}

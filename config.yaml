@@ -1,0 +1,43 @@
+# Central configuration. Everything that affects reproducibility lives here.
+random_state: 42
+
+paths:
+  data_dir: data
+  features_dir: data/features
+  models_dir: models
+
+dataset:
+  n_documents: 120                # number of ORIGINAL normal documents
+  signature_probability: 0.6      # share of normal docs carrying genuine signature images
+  page_size_weights: {letter: 0.7, a4: 0.3}
+  doc_type_weights:
+    contract: 0.30
+    affidavit: 0.20
+    notice: 0.20
+    application_form: 0.20
+    certificate: 0.10
+  margin_alteration:
+    min_frac: 0.04                # min shift as fraction of page width/height
+    max_frac: 0.15
+    all_pages_probability: 0.5    # else only one random page is altered
+    min_measurable_shift: 0.015   # a page only counts as anomalous if its text box moved by >= this (normalized)
+  signature_insertion:
+    min_scale: 0.5                # inserted signature size relative to a genuine one
+    max_scale: 1.8
+
+extraction:
+  render_dpi: 150
+  min_native_words: 5             # fewer native words than this -> treat page as scanned -> OCR fallback
+  full_page_image_threshold: 0.90 # images covering >= this share of the page are treated as scan backgrounds
+  ocr:
+    lang: eng
+    psm: 3
+    min_conf: 30
+  graphic_blob:                   # OpenCV detection of non-text ink (used only on the OCR path)
+    min_height_frac: 0.018
+    min_area_frac: 0.0004
+
+features:
+  grid_rows: 4
+  grid_cols: 4
+  local_density_radius: 0.15      # normalized radius for local density

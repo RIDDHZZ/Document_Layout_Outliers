@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "ML: build features", "type": "shell", "command": "${command:python.interpreterPath}", "args": ["-m", "ml.pipeline", "--build"], "problemMatcher": [] },
+    { "label": "ML: train", "type": "shell", "command": "${command:python.interpreterPath}", "args": ["-m", "ml.train"], "problemMatcher": [] },
+    { "label": "ML: evaluate", "type": "shell", "command": "${command:python.interpreterPath}", "args": ["-m", "ml.evaluate", "--compare"], "problemMatcher": [] },
+    { "label": "ML: full pipeline (features -> train -> evaluate)", "dependsOrder": "sequence",
+      "dependsOn": ["ML: build features", "ML: train", "ML: evaluate"], "problemMatcher": [] },
+    { "label": "Backend: run", "type": "shell", "command": "${command:python.interpreterPath}",
+      "args": ["-m", "uvicorn", "backend.app.main:app", "--reload", "--port", "8000"], "isBackground": true, "problemMatcher": [] },
+    { "label": "Tests", "type": "shell", "command": "${command:python.interpreterPath}", "args": ["-m", "pytest", "-q"], "problemMatcher": [] }
+  ]
+}

@@ -1,0 +1,93 @@
+random_state: 42
+paths:
+  data_dir: data
+  models_dir: models
+  reports_dir: reports
+  annotations: data/metadata/annotations.csv
+  features_table: data/features/page_features.csv
+  elements_table: data/features/elements.csv
+  features_dir: data/features
+split:
+  train: 0.6
+  val: 0.2
+  test: 0.2
+model:
+  n_estimators: 300
+  max_samples: auto
+  contamination: auto
+  max_features: 1.0
+threshold:
+  method: percentile
+  percentile: 95
+grid:
+  rows: 4
+  cols: 4
+regions:
+  top_k: 3
+  z_cap: 6.0
+  std_floor: 0.02
+  flag_z: 4.0
+  neighbor_radius: 0.12
+  min_reference: 10
+  iou_hit: 0.3
+annotations:
+  y_origin: top
+deviation_cap: 3.0
+feature_groups:
+  signature:
+  - sig
+  - nearest_text
+  - nontext
+  - non_text
+  - image
+  - local_density
+  margin:
+  - margin
+  bbox:
+  - bbox
+  density:
+  - density
+  count:
+  - count
+  - n_
+upload:
+  max_mb: 20
+  max_pages: 30
+  ttl_seconds: 1800
+  render_dpi: 110
+  timeout_seconds: 120
+dataset:
+  n_documents: 120
+  signature_probability: 0.6
+  page_size_weights:
+    letter: 0.7
+    a4: 0.3
+  doc_type_weights:
+    contract: 0.3
+    affidavit: 0.2
+    notice: 0.2
+    application_form: 0.2
+    certificate: 0.1
+  margin_alteration:
+    min_frac: 0.04
+    max_frac: 0.15
+    all_pages_probability: 0.5
+    min_measurable_shift: 0.015
+  signature_insertion:
+    min_scale: 0.5
+    max_scale: 1.8
+extraction:
+  render_dpi: 150
+  min_native_words: 5
+  full_page_image_threshold: 0.9
+  ocr:
+    lang: eng
+    psm: 3
+    min_conf: 30
+  graphic_blob:
+    min_height_frac: 0.018
+    min_area_frac: 0.0004
+features:
+  grid_rows: 4
+  grid_cols: 4
+  local_density_radius: 0.15

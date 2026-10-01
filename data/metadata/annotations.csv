@@ -1,0 +1,642 @@
+document_id,source_doc_id,category,file,page_number,page_width,page_height,anomaly_type,x1,y1,x2,y2,is_anomalous,alteration_detail
+doc_001,doc_001,normal,normal/doc_001.pdf,1,612.0,792.0,normal,,,,,0,
+doc_001,doc_001,normal,normal/doc_001.pdf,2,612.0,792.0,normal,,,,,0,
+doc_001_margin,doc_001,altered_margin,altered_margin/doc_001_margin.pdf,1,612.0,792.0,altered_margin,12.0,83.39710235595703,477.47515869140625,705.4642333984375,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -65.46, ""dy"": 0.0}"
+doc_001_margin,doc_001,altered_margin,altered_margin/doc_001_margin.pdf,2,612.0,792.0,altered_margin,12.0,83.52259826660156,443.2874450683594,230.5083770751953,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -65.46, ""dy"": 0.0}"
+doc_001_signature,doc_001,inserted_signature,inserted_signature/doc_001_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_001_signature,doc_001,inserted_signature,inserted_signature/doc_001_signature.pdf,2,612.0,792.0,inserted_signature,421.0709791015578,27.820510095366032,503.30650525345965,51.35737970952293,1,"{""mode"": ""top_right"", ""scale"": 0.805}"
+doc_002,doc_002,normal,normal/doc_002.pdf,1,612.0,792.0,normal,,,,,0,
+doc_002,doc_002,normal,normal/doc_002.pdf,2,612.0,792.0,normal,,,,,0,
+doc_002_margin,doc_002,altered_margin,altered_margin/doc_002_margin.pdf,1,612.0,792.0,altered_margin,22.0,63.21581268310547,552.1021118164062,597.0375366210938,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1], ""left"": -53.74, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_002_margin,doc_002,altered_margin,altered_margin/doc_002_margin.pdf,2,612.0,792.0,altered_margin,22.0,106.88477325439453,336.7965393066406,188.0268096923828,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1], ""left"": -53.74, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_002_signature,doc_002,inserted_signature,inserted_signature/doc_002_signature.pdf,1,612.0,792.0,inserted_signature,36.3888837222494,218.82691679364797,232.66734581309927,263.17003695077517,1,"{""mode"": ""mid_left"", ""scale"": 1.724}"
+doc_002_signature,doc_002,inserted_signature,inserted_signature/doc_002_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_003,doc_003,normal,normal/doc_003.pdf,1,595.28,841.89,normal,,,,,0,
+doc_003_margin,doc_003,altered_margin,altered_margin/doc_003_margin.pdf,1,595.28,841.89,altered_margin,82.75408172607422,115.7138900756836,525.077392578125,689.9219970703125,1,"{""mode"": ""shift_y"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 36.2}"
+doc_003_signature,doc_003,inserted_signature,inserted_signature/doc_003_signature.pdf,1,595.28,841.89,inserted_signature,45.41258526305794,629.0796244512396,142.46602552848424,656.3929753702151,1,"{""mode"": ""offset_from_block"", ""scale"": 0.724}"
+doc_004,doc_004,normal,normal/doc_004.pdf,1,612.0,792.0,normal,,,,,0,
+doc_004,doc_004,normal,normal/doc_004.pdf,2,612.0,792.0,normal,,,,,0,
+doc_004_margin,doc_004,altered_margin,altered_margin/doc_004_margin.pdf,1,612.0,792.0,altered_margin,68.80197143554688,39.789588928222656,530.3840942382812,764.0277709960938,1,"{""mode"": ""top_change"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": -32.02, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_004_margin,doc_004,altered_margin,altered_margin/doc_004_margin.pdf,2,612.0,792.0,altered_margin,68.80197143554688,40.00959014892578,521.5730590820312,764.0277709960938,1,"{""mode"": ""top_change"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": -32.02, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_004_signature,doc_004,inserted_signature,inserted_signature/doc_004_signature.pdf,1,612.0,792.0,inserted_signature,366.1603704964786,723.4558246791865,542.4175144037895,765.0764740454925,1,"{""mode"": ""bottom_right"", ""scale"": 1.761}"
+doc_004_signature,doc_004,inserted_signature,inserted_signature/doc_004_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_005,doc_005,normal,normal/doc_005.pdf,1,612.0,792.0,normal,,,,,0,
+doc_005_margin,doc_005,altered_margin,altered_margin/doc_005_margin.pdf,1,612.0,792.0,altered_margin,74.76261901855469,114.86141967773438,544.3890380859375,755.4761962890625,1,"{""mode"": ""shift_y"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 43.14}"
+doc_005_signature,doc_005,inserted_signature,inserted_signature/doc_005_signature.pdf,1,612.0,792.0,inserted_signature,221.16307619868752,428.97300482097523,353.10338323734015,463.26795827506544,1,"{""mode"": ""center"", ""scale"": 1.102}"
+doc_006,doc_006,normal,normal/doc_006.pdf,1,595.28,841.89,normal,,,,,0,
+doc_006_margin,doc_006,altered_margin,altered_margin/doc_006_margin.pdf,1,595.28,841.89,altered_margin,123.24330139160156,79.31319427490234,545.2454833984375,411.3048095703125,1,"{""mode"": ""shift_x"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 37.03, ""dy"": 0.0}"
+doc_006_signature,doc_006,inserted_signature,inserted_signature/doc_006_signature.pdf,1,595.28,841.89,inserted_signature,49.914252811755674,309.6846376124573,194.71955371787635,341.54698468124593,1,"{""mode"": ""mid_left"", ""scale"": 1.225}"
+doc_007,doc_007,normal,normal/doc_007.pdf,1,595.28,841.89,normal,,,,,0,
+doc_007,doc_007,normal,normal/doc_007.pdf,2,595.28,841.89,normal,,,,,0,
+doc_007,doc_007,normal,normal/doc_007.pdf,3,595.28,841.89,normal,,,,,0,
+doc_007_margin,doc_007,altered_margin,altered_margin/doc_007_margin.pdf,1,595.28,841.89,altered_margin,73.41310119628906,11.27400016784668,512.5708618164062,668.3289184570312,1,"{""mode"": ""shift_y"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -71.06}"
+doc_007_margin,doc_007,altered_margin,altered_margin/doc_007_margin.pdf,2,595.28,841.89,altered_margin,73.41310119628906,11.493999481201172,512.5708618164062,677.3934326171875,1,"{""mode"": ""shift_y"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -71.06}"
+doc_007_margin,doc_007,altered_margin,altered_margin/doc_007_margin.pdf,3,595.28,841.89,altered_margin,73.41310119628906,11.39050006866455,512.5708618164062,307.11322021484375,1,"{""mode"": ""shift_y"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -71.06}"
+doc_007_signature,doc_007,inserted_signature,inserted_signature/doc_007_signature.pdf,1,595.28,841.89,inserted_signature,264.4180946625523,324.86887134213526,445.1888685155271,357.0427521930317,1,"{""mode"": ""center"", ""scale"": 1.624}"
+doc_007_signature,doc_007,inserted_signature,inserted_signature/doc_007_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_007_signature,doc_007,inserted_signature,inserted_signature/doc_007_signature.pdf,3,595.28,841.89,normal,,,,,0,
+doc_008,doc_008,normal,normal/doc_008.pdf,1,612.0,792.0,normal,,,,,0,
+doc_008,doc_008,normal,normal/doc_008.pdf,2,612.0,792.0,normal,,,,,0,
+doc_008_margin,doc_008,altered_margin,altered_margin/doc_008_margin.pdf,1,612.0,792.0,altered_margin,82.90023803710938,100.51961517333984,531.6705322265625,763.880126953125,1,"{""mode"": ""shift_y"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 24.47}"
+doc_008_margin,doc_008,altered_margin,altered_margin/doc_008_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_008_signature,doc_008,inserted_signature,inserted_signature/doc_008_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_008_signature,doc_008,inserted_signature,inserted_signature/doc_008_signature.pdf,2,612.0,792.0,inserted_signature,430.16561494552633,54.40743927504557,515.8646904259565,75.16878178669805,1,"{""mode"": ""top_right"", ""scale"": 0.655}"
+doc_009,doc_009,normal,normal/doc_009.pdf,1,612.0,792.0,normal,,,,,0,
+doc_009,doc_009,normal,normal/doc_009.pdf,2,612.0,792.0,normal,,,,,0,
+doc_009,doc_009,normal,normal/doc_009.pdf,3,612.0,792.0,normal,,,,,0,
+doc_009,doc_009,normal,normal/doc_009.pdf,4,612.0,792.0,normal,,,,,0,
+doc_009_margin,doc_009,altered_margin,altered_margin/doc_009_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_009_margin,doc_009,altered_margin,altered_margin/doc_009_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_009_margin,doc_009,altered_margin,altered_margin/doc_009_margin.pdf,3,612.0,792.0,normal,,,,,0,
+doc_009_margin,doc_009,altered_margin,altered_margin/doc_009_margin.pdf,4,612.0,792.0,altered_margin,64.7151107788086,66.40628051757812,537.008544921875,765.761962890625,1,"{""mode"": ""bottom_change"", ""pages"": [0, 1, 2, 3], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 52.28, ""dx"": 0.0, ""dy"": 0.0}"
+doc_009_signature,doc_009,inserted_signature,inserted_signature/doc_009_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_009_signature,doc_009,inserted_signature,inserted_signature/doc_009_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_009_signature,doc_009,inserted_signature,inserted_signature/doc_009_signature.pdf,3,612.0,792.0,inserted_signature,447.03473986475166,696.9994249816531,525.259916030713,709.6023700306135,1,"{""mode"": ""bottom_right"", ""scale"": 0.666}"
+doc_009_signature,doc_009,inserted_signature,inserted_signature/doc_009_signature.pdf,4,612.0,792.0,normal,,,,,0,
+doc_010,doc_010,normal,normal/doc_010.pdf,1,595.28,841.89,normal,,,,,0,
+doc_010,doc_010,normal,normal/doc_010.pdf,2,595.28,841.89,normal,,,,,0,
+doc_010_margin,doc_010,altered_margin,altered_margin/doc_010_margin.pdf,1,595.28,841.89,altered_margin,77.12667846679688,10.844999313354492,509.1045837402344,812.2302856445312,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -59.32}"
+doc_010_margin,doc_010,altered_margin,altered_margin/doc_010_margin.pdf,2,595.28,841.89,altered_margin,77.12667846679688,11.137499809265137,509.1044921875,812.2302856445312,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -59.32}"
+doc_010_signature,doc_010,inserted_signature,inserted_signature/doc_010_signature.pdf,1,595.28,841.89,inserted_signature,387.6633614290611,757.1755464619664,508.8799251179253,786.4201020372518,1,"{""mode"": ""bottom_right"", ""scale"": 0.911}"
+doc_010_signature,doc_010,inserted_signature,inserted_signature/doc_010_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_011,doc_011,normal,normal/doc_011.pdf,1,612.0,792.0,normal,,,,,0,
+doc_011_margin,doc_011,altered_margin,altered_margin/doc_011_margin.pdf,1,612.0,792.0,altered_margin,67.49604034423828,65.32950592041016,460.35009765625,503.5923767089844,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 67.91, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_011_signature,doc_011,inserted_signature,inserted_signature/doc_011_signature.pdf,1,612.0,792.0,inserted_signature,422.342658416062,687.4437384715025,528.0674098191332,719.3606445554485,1,"{""mode"": ""bottom_right"", ""scale"": 0.953}"
+doc_012,doc_012,normal,normal/doc_012.pdf,1,595.28,841.89,normal,,,,,0,
+doc_012_margin,doc_012,altered_margin,altered_margin/doc_012_margin.pdf,1,595.28,841.89,altered_margin,87.93041229248047,11.317998886108398,510.6156311035156,375.44921875,1,"{""mode"": ""shift_y"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -55.4}"
+doc_012_signature,doc_012,inserted_signature,inserted_signature/doc_012_signature.pdf,1,595.28,841.89,inserted_signature,38.414094439468926,350.39840903583746,199.06037373893713,385.02534556328465,1,"{""mode"": ""mid_left"", ""scale"": 1.345}"
+doc_013,doc_013,normal,normal/doc_013.pdf,1,612.0,792.0,normal,,,,,0,
+doc_013,doc_013,normal,normal/doc_013.pdf,2,612.0,792.0,normal,,,,,0,
+doc_013,doc_013,normal,normal/doc_013.pdf,3,612.0,792.0,normal,,,,,0,
+doc_013_margin,doc_013,altered_margin,altered_margin/doc_013_margin.pdf,1,612.0,792.0,altered_margin,86.16692352294922,81.40280151367188,584.622802734375,762.5252075195312,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": -60.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_013_margin,doc_013,altered_margin,altered_margin/doc_013_margin.pdf,2,612.0,792.0,altered_margin,86.16692352294922,81.75279998779297,584.622802734375,762.5252075195312,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": -60.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_013_margin,doc_013,altered_margin,altered_margin/doc_013_margin.pdf,3,612.0,792.0,altered_margin,86.16692352294922,81.69529724121094,584.6226806640625,762.5252075195312,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": -60.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_013_signature,doc_013,inserted_signature,inserted_signature/doc_013_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_013_signature,doc_013,inserted_signature,inserted_signature/doc_013_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_013_signature,doc_013,inserted_signature,inserted_signature/doc_013_signature.pdf,3,612.0,792.0,inserted_signature,483.10301653013335,30.847486335633533,555.6458135504172,51.68851089394711,1,"{""mode"": ""top_right"", ""scale"": 0.505}"
+doc_014,doc_014,normal,normal/doc_014.pdf,1,612.0,792.0,normal,,,,,0,
+doc_014_margin,doc_014,altered_margin,altered_margin/doc_014_margin.pdf,1,612.0,792.0,altered_margin,12.0,63.28618621826172,478.5344543457031,762.400146484375,1,"{""mode"": ""shift_x"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -59.49, ""dy"": 0.0}"
+doc_014_signature,doc_014,inserted_signature,inserted_signature/doc_014_signature.pdf,1,612.0,792.0,inserted_signature,359.29654468204285,11.780340462241831,606.0,64.28032247905759,1,"{""mode"": ""top_right"", ""scale"": 1.708}"
+doc_015,doc_015,normal,normal/doc_015.pdf,1,612.0,792.0,normal,,,,,0,
+doc_015,doc_015,normal,normal/doc_015.pdf,2,612.0,792.0,normal,,,,,0,
+doc_015_margin,doc_015,altered_margin,altered_margin/doc_015_margin.pdf,1,612.0,792.0,altered_margin,86.9583969116211,143.4284210205078,538.9313354492188,757.7952270507812,1,"{""mode"": ""top_change"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 78.76, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_015_margin,doc_015,altered_margin,altered_margin/doc_015_margin.pdf,2,612.0,792.0,altered_margin,86.9583969116211,143.544921875,529.34033203125,757.7952270507812,1,"{""mode"": ""top_change"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 78.76, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_015_signature,doc_015,inserted_signature,inserted_signature/doc_015_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_015_signature,doc_015,inserted_signature,inserted_signature/doc_015_signature.pdf,2,612.0,792.0,inserted_signature,250.98350568659993,399.1780937323673,349.5498382521458,424.92171547578357,1,"{""mode"": ""center"", ""scale"": 0.843}"
+doc_016,doc_016,normal,normal/doc_016.pdf,1,612.0,792.0,normal,,,,,0,
+doc_016_margin,doc_016,altered_margin,altered_margin/doc_016_margin.pdf,1,612.0,792.0,altered_margin,22.0,83.38960266113281,539.0973510742188,764.648193359375,1,"{""mode"": ""left_decrease"", ""pages"": [0], ""left"": -63.48, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_016_signature,doc_016,inserted_signature,inserted_signature/doc_016_signature.pdf,1,612.0,792.0,inserted_signature,380.4366157413067,43.984242431572895,533.5037466141769,81.01240696981407,1,"{""mode"": ""top_right"", ""scale"": 1.375}"
+doc_017,doc_017,normal,normal/doc_017.pdf,1,612.0,792.0,normal,,,,,0,
+doc_017_margin,doc_017,altered_margin,altered_margin/doc_017_margin.pdf,1,612.0,792.0,altered_margin,82.75737762451172,24.314115524291992,535.3170776367188,758.4616088867188,1,"{""mode"": ""top_change"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": -60.49, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_017_signature,doc_017,inserted_signature,inserted_signature/doc_017_signature.pdf,1,612.0,792.0,inserted_signature,429.53637745528033,742.0820587877893,518.2712832119222,750.939147347602,1,"{""mode"": ""bottom_right"", ""scale"": 0.649}"
+doc_018,doc_018,normal,normal/doc_018.pdf,1,612.0,792.0,normal,,,,,0,
+doc_018,doc_018,normal,normal/doc_018.pdf,2,612.0,792.0,normal,,,,,0,
+doc_018,doc_018,normal,normal/doc_018.pdf,3,612.0,792.0,normal,,,,,0,
+doc_018_margin,doc_018,altered_margin,altered_margin/doc_018_margin.pdf,1,612.0,792.0,altered_margin,128.85659790039062,66.5147705078125,597.8567504882812,758.6510009765625,1,"{""mode"": ""shift_x"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 44.99, ""dy"": 0.0}"
+doc_018_margin,doc_018,altered_margin,altered_margin/doc_018_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_018_margin,doc_018,altered_margin,altered_margin/doc_018_margin.pdf,3,612.0,792.0,normal,,,,,0,
+doc_018_signature,doc_018,inserted_signature,inserted_signature/doc_018_signature.pdf,1,612.0,792.0,inserted_signature,160.46241247593895,358.37606982967156,353.4059076961387,410.8777011821069,1,"{""mode"": ""center"", ""scale"": 1.786}"
+doc_018_signature,doc_018,inserted_signature,inserted_signature/doc_018_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_018_signature,doc_018,inserted_signature,inserted_signature/doc_018_signature.pdf,3,612.0,792.0,normal,,,,,0,
+doc_019,doc_019,normal,normal/doc_019.pdf,1,595.28,841.89,normal,,,,,0,
+doc_019,doc_019,normal,normal/doc_019.pdf,2,595.28,841.89,normal,,,,,0,
+doc_019_margin,doc_019,altered_margin,altered_margin/doc_019_margin.pdf,1,595.28,841.89,altered_margin,83.57627868652344,79.2779312133789,510.44683837890625,780.7957153320312,1,"{""mode"": ""bottom_change"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": -31.59, ""dx"": 0.0, ""dy"": 0.0}"
+doc_019_margin,doc_019,altered_margin,altered_margin/doc_019_margin.pdf,2,595.28,841.89,normal,,,,,0,
+doc_019_signature,doc_019,inserted_signature,inserted_signature/doc_019_signature.pdf,1,595.28,841.89,inserted_signature,59.18392159368102,490.4062920532461,179.5397582310582,519.8078057484929,1,"{""mode"": ""mid_left"", ""scale"": 1.055}"
+doc_019_signature,doc_019,inserted_signature,inserted_signature/doc_019_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_020,doc_020,normal,normal/doc_020.pdf,1,595.28,841.89,normal,,,,,0,
+doc_020_margin,doc_020,altered_margin,altered_margin/doc_020_margin.pdf,1,595.28,841.89,altered_margin,73.7414321899414,86.41731262207031,573.2023315429688,813.0635375976562,1,"{""mode"": ""right_decrease"", ""pages"": [0], ""left"": 0.0, ""right"": -62.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_020_signature,doc_020,inserted_signature,inserted_signature/doc_020_signature.pdf,1,595.28,841.89,inserted_signature,453.4691720080272,773.0620265346513,544.6348071379502,795.5278437630966,1,"{""mode"": ""bottom_right"", ""scale"": 0.734}"
+doc_021,doc_021,normal,normal/doc_021.pdf,1,612.0,792.0,normal,,,,,0,
+doc_021,doc_021,normal,normal/doc_021.pdf,2,612.0,792.0,normal,,,,,0,
+doc_021,doc_021,normal,normal/doc_021.pdf,3,612.0,792.0,normal,,,,,0,
+doc_021_margin,doc_021,altered_margin,altered_margin/doc_021_margin.pdf,1,612.0,792.0,altered_margin,78.05384063720703,78.35982513427734,607.0625610351562,717.2714233398438,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": -59.58, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_021_margin,doc_021,altered_margin,altered_margin/doc_021_margin.pdf,2,612.0,792.0,altered_margin,78.05384063720703,78.6573257446289,590.0006713867188,696.048583984375,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": -59.58, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_021_margin,doc_021,altered_margin,altered_margin/doc_021_margin.pdf,3,612.0,792.0,altered_margin,78.05384063720703,78.70982360839844,590.00048828125,380.76202392578125,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": -59.58, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_021_signature,doc_021,inserted_signature,inserted_signature/doc_021_signature.pdf,1,612.0,792.0,inserted_signature,429.08494505182307,36.012134343182794,606.0,79.76870487306996,1,"{""mode"": ""top_right"", ""scale"": 1.297}"
+doc_021_signature,doc_021,inserted_signature,inserted_signature/doc_021_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_021_signature,doc_021,inserted_signature,inserted_signature/doc_021_signature.pdf,3,612.0,792.0,normal,,,,,0,
+doc_022,doc_022,normal,normal/doc_022.pdf,1,612.0,792.0,normal,,,,,0,
+doc_022_margin,doc_022,altered_margin,altered_margin/doc_022_margin.pdf,1,612.0,792.0,altered_margin,86.07051849365234,86.0794906616211,499.27734375,759.0204467773438,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 36.84, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_022_signature,doc_022,inserted_signature,inserted_signature/doc_022_signature.pdf,1,612.0,792.0,inserted_signature,394.3086609938477,675.9848215189546,487.41719649759466,695.6485375007928,1,"{""mode"": ""bottom_right"", ""scale"": 0.743}"
+doc_023,doc_023,normal,normal/doc_023.pdf,1,612.0,792.0,normal,,,,,0,
+doc_023_margin,doc_023,altered_margin,altered_margin/doc_023_margin.pdf,1,612.0,792.0,altered_margin,79.26219177246094,73.15840148925781,549.7611083984375,405.1553955078125,1,"{""mode"": ""right_decrease"", ""pages"": [0], ""left"": 0.0, ""right"": -49.85, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_023_signature,doc_023,inserted_signature,inserted_signature/doc_023_signature.pdf,1,612.0,792.0,inserted_signature,63.62855411616446,242.96199526160623,183.13999228785536,264.8793178328852,1,"{""mode"": ""mid_left"", ""scale"": 1.189}"
+doc_024,doc_024,normal,normal/doc_024.pdf,1,612.0,792.0,normal,,,,,0,
+doc_024_margin,doc_024,altered_margin,altered_margin/doc_024_margin.pdf,1,612.0,792.0,altered_margin,26.380409240722656,65.71778106689453,532.6484375,555.1322631835938,1,"{""mode"": ""left_decrease"", ""pages"": [0], ""left"": -55.33, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_024_signature,doc_024,inserted_signature,inserted_signature/doc_024_signature.pdf,1,612.0,792.0,inserted_signature,223.76820054639379,432.14879452100206,314.625212047907,454.25354150527005,1,"{""mode"": ""center"", ""scale"": 0.78}"
+doc_025,doc_025,normal,normal/doc_025.pdf,1,612.0,792.0,normal,,,,,0,
+doc_025_margin,doc_025,altered_margin,altered_margin/doc_025_margin.pdf,1,612.0,792.0,altered_margin,81.39775085449219,118.52190399169922,539.3609619140625,755.9758911132812,1,"{""mode"": ""shift_y"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 42.03}"
+doc_025_signature,doc_025,inserted_signature,inserted_signature/doc_025_signature.pdf,1,612.0,792.0,inserted_signature,439.0780067676077,19.758685984495937,600.5390038882298,59.696035095603875,1,"{""mode"": ""top_right"", ""scale"": 1.11}"
+doc_026,doc_026,normal,normal/doc_026.pdf,1,595.28,841.89,normal,,,,,0,
+doc_026_margin,doc_026,altered_margin,altered_margin/doc_026_margin.pdf,1,595.28,841.89,altered_margin,124.66680145263672,81.0145263671875,507.59674072265625,503.730712890625,1,"{""mode"": ""left_increase"", ""pages"": [0], ""left"": 46.97, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_026_signature,doc_026,inserted_signature,inserted_signature/doc_026_signature.pdf,1,595.28,841.89,inserted_signature,178.15827257474757,472.41477509709813,314.92866270362083,507.9798503662118,1,"{""mode"": ""offset_from_block"", ""scale"": 1.081}"
+doc_027,doc_027,normal,normal/doc_027.pdf,1,612.0,792.0,normal,,,,,0,
+doc_027,doc_027,normal,normal/doc_027.pdf,2,612.0,792.0,normal,,,,,0,
+doc_027_margin,doc_027,altered_margin,altered_margin/doc_027_margin.pdf,1,612.0,792.0,altered_margin,38.48244094848633,70.36109924316406,542.9475708007812,765.2763061523438,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1], ""left"": -26.35, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_027_signature,doc_027,inserted_signature,inserted_signature/doc_027_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_027_signature,doc_027,inserted_signature,inserted_signature/doc_027_signature.pdf,2,612.0,792.0,inserted_signature,217.9369994099604,312.10490124742597,405.2791856591009,356.2641308632948,1,"{""mode"": ""center"", ""scale"": 1.376}"
+doc_028,doc_028,normal,normal/doc_028.pdf,1,595.28,841.89,normal,,,,,0,
+doc_028,doc_028,normal,normal/doc_028.pdf,2,595.28,841.89,normal,,,,,0,
+doc_028,doc_028,normal,normal/doc_028.pdf,3,595.28,841.89,normal,,,,,0,
+doc_028_margin,doc_028,altered_margin,altered_margin/doc_028_margin.pdf,1,595.28,841.89,altered_margin,86.75177001953125,68.92584228515625,570.9996337890625,725.8892211914062,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": -65.82, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_028_margin,doc_028,altered_margin,altered_margin/doc_028_margin.pdf,2,595.28,841.89,altered_margin,86.75177001953125,69.27584838867188,571.611572265625,712.4158325195312,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": -65.82, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_028_margin,doc_028,altered_margin,altered_margin/doc_028_margin.pdf,3,595.28,841.89,altered_margin,86.75177001953125,69.27584838867188,562.2876586914062,342.5116271972656,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": -65.82, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_028_signature,doc_028,inserted_signature,inserted_signature/doc_028_signature.pdf,1,595.28,841.89,normal,,,,,0,
+doc_028_signature,doc_028,inserted_signature,inserted_signature/doc_028_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_028_signature,doc_028,inserted_signature,inserted_signature/doc_028_signature.pdf,3,595.28,841.89,inserted_signature,379.2804322284857,760.8019858850195,545.0502878135492,794.7367570464545,1,"{""mode"": ""bottom_right"", ""scale"": 1.322}"
+doc_029,doc_029,normal,normal/doc_029.pdf,1,612.0,792.0,normal,,,,,0,
+doc_029,doc_029,normal,normal/doc_029.pdf,2,612.0,792.0,normal,,,,,0,
+doc_029_margin,doc_029,altered_margin,altered_margin/doc_029_margin.pdf,1,612.0,792.0,altered_margin,12.0,70.29328155517578,469.2750244140625,763.00634765625,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -55.11, ""dy"": 0.0}"
+doc_029_margin,doc_029,altered_margin,altered_margin/doc_029_margin.pdf,2,612.0,792.0,altered_margin,12.0,101.21315002441406,382.2153015136719,763.00634765625,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -55.11, ""dy"": 0.0}"
+doc_029_signature,doc_029,inserted_signature,inserted_signature/doc_029_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_029_signature,doc_029,inserted_signature,inserted_signature/doc_029_signature.pdf,2,612.0,792.0,inserted_signature,34.20081433777428,324.05409140873496,157.5517586623434,348.6356979078861,1,"{""mode"": ""mid_left"", ""scale"": 0.968}"
+doc_030,doc_030,normal,normal/doc_030.pdf,1,612.0,792.0,normal,,,,,0,
+doc_030,doc_030,normal,normal/doc_030.pdf,2,612.0,792.0,normal,,,,,0,
+doc_030_margin,doc_030,altered_margin,altered_margin/doc_030_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_030_margin,doc_030,altered_margin,altered_margin/doc_030_margin.pdf,2,612.0,792.0,altered_margin,81.65654754638672,73.0792236328125,538.8126831054688,468.14190673828125,1,"{""mode"": ""right_increase"", ""pages"": [1], ""left"": 0.0, ""right"": 74.97, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_030_signature,doc_030,inserted_signature,inserted_signature/doc_030_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_030_signature,doc_030,inserted_signature,inserted_signature/doc_030_signature.pdf,2,612.0,792.0,inserted_signature,394.11336303866665,706.6228945393916,508.6816470677129,727.1967765305232,1,"{""mode"": ""bottom_right"", ""scale"": 0.972}"
+doc_031,doc_031,normal,normal/doc_031.pdf,1,612.0,792.0,normal,,,,,0,
+doc_031_margin,doc_031,altered_margin,altered_margin/doc_031_margin.pdf,1,612.0,792.0,altered_margin,80.06063079833984,64.2223129272461,590.00048828125,452.4735107421875,1,"{""mode"": ""right_decrease"", ""pages"": [0], ""left"": 0.0, ""right"": -54.26, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_031_signature,doc_031,inserted_signature,inserted_signature/doc_031_signature.pdf,1,612.0,792.0,inserted_signature,6.0,278.00944858794804,238.1111874314456,309.7720321311985,1,"{""mode"": ""offset_from_block"", ""scale"": 1.744}"
+doc_032,doc_032,normal,normal/doc_032.pdf,1,595.28,841.89,normal,,,,,0,
+doc_032_margin,doc_032,altered_margin,altered_margin/doc_032_margin.pdf,1,595.28,841.89,altered_margin,85.75263977050781,75.8083267211914,452.2099609375,812.736328125,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 72.66, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_032_signature,doc_032,inserted_signature,inserted_signature/doc_032_signature.pdf,1,595.28,841.89,inserted_signature,216.142045723579,422.24642943428137,342.74540906577585,446.02584376638094,1,"{""mode"": ""offset_from_block"", ""scale"": 1.182}"
+doc_033,doc_033,normal,normal/doc_033.pdf,1,612.0,792.0,normal,,,,,0,
+doc_033,doc_033,normal,normal/doc_033.pdf,2,612.0,792.0,normal,,,,,0,
+doc_033_margin,doc_033,altered_margin,altered_margin/doc_033_margin.pdf,1,612.0,792.0,altered_margin,84.91773986816406,47.11022186279297,537.3477783203125,642.6503295898438,1,"{""mode"": ""shift_y"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -35.68}"
+doc_033_margin,doc_033,altered_margin,altered_margin/doc_033_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_033_signature,doc_033,inserted_signature,inserted_signature/doc_033_signature.pdf,1,612.0,792.0,inserted_signature,172.747556231575,344.95977366435073,377.5174481080443,394.1624331965059,1,"{""mode"": ""center"", ""scale"": 1.57}"
+doc_033_signature,doc_033,inserted_signature,inserted_signature/doc_033_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_034,doc_034,normal,normal/doc_034.pdf,1,612.0,792.0,normal,,,,,0,
+doc_034,doc_034,normal,normal/doc_034.pdf,2,612.0,792.0,normal,,,,,0,
+doc_034,doc_034,normal,normal/doc_034.pdf,3,612.0,792.0,normal,,,,,0,
+doc_034_margin,doc_034,altered_margin,altered_margin/doc_034_margin.pdf,1,612.0,792.0,altered_margin,72.05152130126953,86.28519439697266,528.7496337890625,742.10009765625,1,"{""mode"": ""bottom_change"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": -26.29, ""dx"": 0.0, ""dy"": 0.0}"
+doc_034_margin,doc_034,altered_margin,altered_margin/doc_034_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_034_margin,doc_034,altered_margin,altered_margin/doc_034_margin.pdf,3,612.0,792.0,normal,,,,,0,
+doc_034_signature,doc_034,inserted_signature,inserted_signature/doc_034_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_034_signature,doc_034,inserted_signature,inserted_signature/doc_034_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_034_signature,doc_034,inserted_signature,inserted_signature/doc_034_signature.pdf,3,612.0,792.0,inserted_signature,193.34966005617852,413.09836329268364,354.7676516602944,454.81959106914854,1,"{""mode"": ""center"", ""scale"": 1.11}"
+doc_035,doc_035,normal,normal/doc_035.pdf,1,612.0,792.0,normal,,,,,0,
+doc_035,doc_035,normal,normal/doc_035.pdf,2,612.0,792.0,normal,,,,,0,
+doc_035,doc_035,normal,normal/doc_035.pdf,3,612.0,792.0,normal,,,,,0,
+doc_035_margin,doc_035,altered_margin,altered_margin/doc_035_margin.pdf,1,612.0,792.0,altered_margin,74.6485366821289,63.24419403076172,482.4845275878906,758.36572265625,1,"{""mode"": ""right_increase"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 43.25, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_035_margin,doc_035,altered_margin,altered_margin/doc_035_margin.pdf,2,612.0,792.0,altered_margin,74.6485366821289,63.59419631958008,483.6395568847656,758.36572265625,1,"{""mode"": ""right_increase"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 43.25, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_035_margin,doc_035,altered_margin,altered_margin/doc_035_margin.pdf,3,612.0,792.0,altered_margin,74.6485366821289,63.5391960144043,416.8644104003906,758.36572265625,1,"{""mode"": ""right_increase"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 43.25, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_035_signature,doc_035,inserted_signature,inserted_signature/doc_035_signature.pdf,1,612.0,792.0,inserted_signature,65.19406842959748,234.69911996593945,233.79026097231727,275.1373211293224,1,"{""mode"": ""mid_left"", ""scale"": 1.304}"
+doc_035_signature,doc_035,inserted_signature,inserted_signature/doc_035_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_035_signature,doc_035,inserted_signature,inserted_signature/doc_035_signature.pdf,3,612.0,792.0,normal,,,,,0,
+doc_036,doc_036,normal,normal/doc_036.pdf,1,612.0,792.0,normal,,,,,0,
+doc_036,doc_036,normal,normal/doc_036.pdf,2,612.0,792.0,normal,,,,,0,
+doc_036_margin,doc_036,altered_margin,altered_margin/doc_036_margin.pdf,1,612.0,792.0,altered_margin,154.1551971435547,75.50112915039062,536.0076293945312,758.3079833984375,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 78.19, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_036_margin,doc_036,altered_margin,altered_margin/doc_036_margin.pdf,2,612.0,792.0,altered_margin,154.1551971435547,75.79362487792969,536.007568359375,758.3079833984375,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 78.19, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_036_margin,doc_036,altered_margin,altered_margin/doc_036_margin.pdf,3,612.0,792.0,normal,,,,,0,
+doc_036_signature,doc_036,inserted_signature,inserted_signature/doc_036_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_036_signature,doc_036,inserted_signature,inserted_signature/doc_036_signature.pdf,2,612.0,792.0,inserted_signature,404.5387643938625,19.44180383125262,598.0228432459107,53.78607793328579,1,"{""mode"": ""top_right"", ""scale"": 1.403}"
+doc_037,doc_037,normal,normal/doc_037.pdf,1,612.0,792.0,normal,,,,,0,
+doc_037,doc_037,normal,normal/doc_037.pdf,2,612.0,792.0,normal,,,,,0,
+doc_037_margin,doc_037,altered_margin,altered_margin/doc_037_margin.pdf,1,612.0,792.0,altered_margin,66.35340118408203,14.733892440795898,535.2940063476562,758.61328125,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -65.16}"
+doc_037_margin,doc_037,altered_margin,altered_margin/doc_037_margin.pdf,2,612.0,792.0,altered_margin,66.35340118408203,14.953893661499023,528.5844116210938,758.61328125,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -65.16}"
+doc_037_signature,doc_037,inserted_signature,inserted_signature/doc_037_signature.pdf,1,612.0,792.0,inserted_signature,113.75403186074197,362.65801112839904,176.12780339399802,381.5661415007724,1,"{""mode"": ""mid_left"", ""scale"": 0.609}"
+doc_037_signature,doc_037,inserted_signature,inserted_signature/doc_037_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_038,doc_038,normal,normal/doc_038.pdf,1,595.28,841.89,normal,,,,,0,
+doc_038,doc_038,normal,normal/doc_038.pdf,2,595.28,841.89,normal,,,,,0,
+doc_038_margin,doc_038,altered_margin,altered_margin/doc_038_margin.pdf,1,595.28,841.89,altered_margin,164.18930053710938,73.20574188232422,509.3258361816406,805.9674682617188,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 86.98, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_038_margin,doc_038,altered_margin,altered_margin/doc_038_margin.pdf,2,595.28,841.89,altered_margin,164.18930053710938,73.50074768066406,509.3258056640625,805.9674682617188,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 86.98, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_038_signature,doc_038,inserted_signature,inserted_signature/doc_038_signature.pdf,1,595.28,841.89,normal,,,,,0,
+doc_038_signature,doc_038,inserted_signature,inserted_signature/doc_038_signature.pdf,2,595.28,841.89,inserted_signature,6.0,305.84071713134824,158.54758344834653,337.95599785731594,1,"{""mode"": ""offset_from_block"", ""scale"": 1.362}"
+doc_039,doc_039,normal,normal/doc_039.pdf,1,612.0,792.0,normal,,,,,0,
+doc_039_margin,doc_039,altered_margin,altered_margin/doc_039_margin.pdf,1,612.0,792.0,altered_margin,163.0258026123047,69.5531997680664,527.1588745117188,448.3827819824219,1,"{""mode"": ""left_increase"", ""pages"": [0], ""left"": 80.52, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_039_signature,doc_039,inserted_signature,inserted_signature/doc_039_signature.pdf,1,612.0,792.0,inserted_signature,19.88418652995412,355.8144990272763,201.6414721330827,391.762797658579,1,"{""mode"": ""mid_left"", ""scale"": 1.285}"
+doc_040,doc_040,normal,normal/doc_040.pdf,1,595.28,841.89,normal,,,,,0,
+doc_040,doc_040,normal,normal/doc_040.pdf,2,595.28,841.89,normal,,,,,0,
+doc_040_margin,doc_040,altered_margin,altered_margin/doc_040_margin.pdf,1,595.28,841.89,altered_margin,13.682869911193848,71.71258544921875,446.8044738769531,744.4471435546875,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -69.43, ""dy"": 0.0}"
+doc_040_margin,doc_040,altered_margin,altered_margin/doc_040_margin.pdf,2,595.28,841.89,altered_margin,13.682869911193848,72.0025863647461,446.80438232421875,261.5048522949219,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -69.43, ""dy"": 0.0}"
+doc_040_signature,doc_040,inserted_signature,inserted_signature/doc_040_signature.pdf,1,595.28,841.89,inserted_signature,372.02872631098944,769.9273572583282,589.28,818.7791061865701,1,"{""mode"": ""bottom_right"", ""scale"": 1.731}"
+doc_040_signature,doc_040,inserted_signature,inserted_signature/doc_040_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_041,doc_041,normal,normal/doc_041.pdf,1,612.0,792.0,normal,,,,,0,
+doc_041,doc_041,normal,normal/doc_041.pdf,2,612.0,792.0,normal,,,,,0,
+doc_041_margin,doc_041,altered_margin,altered_margin/doc_041_margin.pdf,1,612.0,792.0,altered_margin,36.00276184082031,78.04922485351562,568.6513671875,720.9755249023438,1,"{""mode"": ""left_decrease"", ""pages"": [0], ""left"": -34.92, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_041_margin,doc_041,altered_margin,altered_margin/doc_041_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_041_signature,doc_041,inserted_signature,inserted_signature/doc_041_signature.pdf,1,612.0,792.0,inserted_signature,377.10353824427057,680.1051755664394,526.273954597337,716.0267280338138,1,"{""mode"": ""bottom_right"", ""scale"": 1.298}"
+doc_041_signature,doc_041,inserted_signature,inserted_signature/doc_041_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_042,doc_042,normal,normal/doc_042.pdf,1,612.0,792.0,normal,,,,,0,
+doc_042,doc_042,normal,normal/doc_042.pdf,2,612.0,792.0,normal,,,,,0,
+doc_042_margin,doc_042,altered_margin,altered_margin/doc_042_margin.pdf,1,612.0,792.0,altered_margin,79.8864974975586,78.2841796875,558.0944213867188,708.8216552734375,1,"{""mode"": ""right_decrease"", ""pages"": [0], ""left"": 0.0, ""right"": -30.13, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_042_margin,doc_042,altered_margin,altered_margin/doc_042_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_042_signature,doc_042,inserted_signature,inserted_signature/doc_042_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_042_signature,doc_042,inserted_signature,inserted_signature/doc_042_signature.pdf,2,612.0,792.0,inserted_signature,217.34702080602898,409.52118113621634,370.471316938555,446.91517145735014,1,"{""mode"": ""center"", ""scale"": 1.318}"
+doc_043,doc_043,normal,normal/doc_043.pdf,1,612.0,792.0,normal,,,,,0,
+doc_043,doc_043,normal,normal/doc_043.pdf,2,612.0,792.0,normal,,,,,0,
+doc_043,doc_043,normal,normal/doc_043.pdf,3,612.0,792.0,normal,,,,,0,
+doc_043_margin,doc_043,altered_margin,altered_margin/doc_043_margin.pdf,1,612.0,792.0,altered_margin,70.40701293945312,194.1263885498047,538.9830932617188,759.8951416015625,1,"{""mode"": ""top_change"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 110.67, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_043_margin,doc_043,altered_margin,altered_margin/doc_043_margin.pdf,2,612.0,792.0,altered_margin,70.40701293945312,194.3463897705078,543.6510620117188,759.8951416015625,1,"{""mode"": ""top_change"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 110.67, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_043_margin,doc_043,altered_margin,altered_margin/doc_043_margin.pdf,3,612.0,792.0,altered_margin,70.40701293945312,194.23838806152344,540.9990844726562,759.8951416015625,1,"{""mode"": ""top_change"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 110.67, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_043_margin,doc_043,altered_margin,altered_margin/doc_043_margin.pdf,4,612.0,792.0,normal,,,,,0,
+doc_043_signature,doc_043,inserted_signature,inserted_signature/doc_043_signature.pdf,1,612.0,792.0,inserted_signature,91.16141757596552,304.1757438782981,173.8442818945137,328.38327449627604,1,"{""mode"": ""mid_left"", ""scale"": 0.743}"
+doc_043_signature,doc_043,inserted_signature,inserted_signature/doc_043_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_043_signature,doc_043,inserted_signature,inserted_signature/doc_043_signature.pdf,3,612.0,792.0,normal,,,,,0,
+doc_044,doc_044,normal,normal/doc_044.pdf,1,612.0,792.0,normal,,,,,0,
+doc_044,doc_044,normal,normal/doc_044.pdf,2,612.0,792.0,normal,,,,,0,
+doc_044_margin,doc_044,altered_margin,altered_margin/doc_044_margin.pdf,1,612.0,792.0,altered_margin,108.78820037841797,83.67752075195312,523.8694458007812,763.92578125,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 39.45, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_044_margin,doc_044,altered_margin,altered_margin/doc_044_margin.pdf,2,612.0,792.0,altered_margin,108.78820037841797,84.02751922607422,523.6278686523438,763.92578125,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 39.45, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_044_signature,doc_044,inserted_signature,inserted_signature/doc_044_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_044_signature,doc_044,inserted_signature,inserted_signature/doc_044_signature.pdf,2,612.0,792.0,inserted_signature,392.41680299022323,29.24246264302139,606.0,81.30811743010221,1,"{""mode"": ""top_right"", ""scale"": 1.644}"
+doc_045,doc_045,normal,normal/doc_045.pdf,1,595.28,841.89,normal,,,,,0,
+doc_045,doc_045,normal,normal/doc_045.pdf,2,595.28,841.89,normal,,,,,0,
+doc_045_margin,doc_045,altered_margin,altered_margin/doc_045_margin.pdf,1,595.28,841.89,altered_margin,22.0,72.25321960449219,524.2239990234375,808.1306762695312,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1], ""left"": -51.34, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_045_margin,doc_045,altered_margin,altered_margin/doc_045_margin.pdf,2,595.28,841.89,altered_margin,22.0,72.36521911621094,514.9000244140625,808.1306762695312,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1], ""left"": -51.34, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_045_signature,doc_045,inserted_signature,inserted_signature/doc_045_signature.pdf,1,595.28,841.89,normal,,,,,0,
+doc_045_signature,doc_045,inserted_signature,inserted_signature/doc_045_signature.pdf,2,595.28,841.89,inserted_signature,286.55849583204895,359.49781496254957,377.34616068590987,381.6977184122163,1,"{""mode"": ""center"", ""scale"": 0.839}"
+doc_046,doc_046,normal,normal/doc_046.pdf,1,595.28,841.89,normal,,,,,0,
+doc_046_margin,doc_046,altered_margin,altered_margin/doc_046_margin.pdf,1,595.28,841.89,altered_margin,95.9620590209961,78.40260314941406,526.2221069335938,812.1410522460938,1,"{""mode"": ""left_increase"", ""pages"": [0], ""left"": 33.92, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_046_signature,doc_046,inserted_signature,inserted_signature/doc_046_signature.pdf,1,595.28,841.89,inserted_signature,355.6986344841039,713.6761273875258,549.1148324687538,760.917605833334,1,"{""mode"": ""bottom_right"", ""scale"": 1.701}"
+doc_047,doc_047,normal,normal/doc_047.pdf,1,612.0,792.0,normal,,,,,0,
+doc_047,doc_047,normal,normal/doc_047.pdf,2,612.0,792.0,normal,,,,,0,
+doc_047_margin,doc_047,altered_margin,altered_margin/doc_047_margin.pdf,1,612.0,792.0,altered_margin,65.1287612915039,81.9455795288086,502.85308837890625,762.9402465820312,1,"{""mode"": ""right_increase"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 32.95, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_047_margin,doc_047,altered_margin,altered_margin/doc_047_margin.pdf,2,612.0,792.0,altered_margin,65.1287612915039,82.24308013916016,502.85308837890625,762.9402465820312,1,"{""mode"": ""right_increase"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 32.95, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_047_signature,doc_047,inserted_signature,inserted_signature/doc_047_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_047_signature,doc_047,inserted_signature,inserted_signature/doc_047_signature.pdf,2,612.0,792.0,inserted_signature,6.0,320.6757767352224,201.20986515838464,374.5522234519033,1,"{""mode"": ""mid_left"", ""scale"": 1.501}"
+doc_048,doc_048,normal,normal/doc_048.pdf,1,612.0,792.0,normal,,,,,0,
+doc_048_margin,doc_048,altered_margin,altered_margin/doc_048_margin.pdf,1,612.0,792.0,altered_margin,103.01260375976562,75.84659576416016,522.4742431640625,758.264892578125,1,"{""mode"": ""left_increase"", ""pages"": [0], ""left"": 31.33, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_048_signature,doc_048,inserted_signature,inserted_signature/doc_048_signature.pdf,1,612.0,792.0,inserted_signature,416.3339616454898,50.135314383927636,506.47729174326753,69.75199761764092,1,"{""mode"": ""top_right"", ""scale"": 0.916}"
+doc_049,doc_049,normal,normal/doc_049.pdf,1,595.28,841.89,normal,,,,,0,
+doc_049,doc_049,normal,normal/doc_049.pdf,2,595.28,841.89,normal,,,,,0,
+doc_049,doc_049,normal,normal/doc_049.pdf,3,595.28,841.89,normal,,,,,0,
+doc_049_margin,doc_049,altered_margin,altered_margin/doc_049_margin.pdf,1,595.28,841.89,normal,,,,,0,
+doc_049_margin,doc_049,altered_margin,altered_margin/doc_049_margin.pdf,2,595.28,841.89,altered_margin,22.0,83.49122619628906,510.5517883300781,806.7225952148438,1,"{""mode"": ""left_decrease"", ""pages"": [1], ""left"": -60.64, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_049_margin,doc_049,altered_margin,altered_margin/doc_049_margin.pdf,3,595.28,841.89,normal,,,,,0,
+doc_049_signature,doc_049,inserted_signature,inserted_signature/doc_049_signature.pdf,1,595.28,841.89,inserted_signature,225.93514179904986,413.9630304205752,353.5431570968014,445.0089876307616,1,"{""mode"": ""center"", ""scale"": 1.083}"
+doc_049_signature,doc_049,inserted_signature,inserted_signature/doc_049_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_049_signature,doc_049,inserted_signature,inserted_signature/doc_049_signature.pdf,3,595.28,841.89,normal,,,,,0,
+doc_050,doc_050,normal,normal/doc_050.pdf,1,595.28,841.89,normal,,,,,0,
+doc_050_margin,doc_050,altered_margin,altered_margin/doc_050_margin.pdf,1,595.28,841.89,altered_margin,78.5413818359375,66.84342193603516,439.0613098144531,465.577392578125,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 68.33, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_050_signature,doc_050,inserted_signature,inserted_signature/doc_050_signature.pdf,1,595.28,841.89,inserted_signature,354.7184298032297,36.21146722379625,513.1624140290737,67.78648023828222,1,"{""mode"": ""top_right"", ""scale"": 1.439}"
+doc_051,doc_051,normal,normal/doc_051.pdf,1,612.0,792.0,normal,,,,,0,
+doc_051_margin,doc_051,altered_margin,altered_margin/doc_051_margin.pdf,1,612.0,792.0,altered_margin,22.0,65.88919830322266,484.03643798828125,755.5598754882812,1,"{""mode"": ""left_decrease"", ""pages"": [0], ""left"": -44.02, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_051_signature,doc_051,inserted_signature,inserted_signature/doc_051_signature.pdf,1,612.0,792.0,inserted_signature,34.32953522214767,351.17279353506865,198.44698057882022,394.01120960700433,1,"{""mode"": ""mid_left"", ""scale"": 1.574}"
+doc_052,doc_052,normal,normal/doc_052.pdf,1,612.0,792.0,normal,,,,,0,
+doc_052_margin,doc_052,altered_margin,altered_margin/doc_052_margin.pdf,1,612.0,792.0,altered_margin,127.29090118408203,72.96610260009766,573.4628295898438,755.8360595703125,1,"{""mode"": ""left_increase"", ""pages"": [0], ""left"": 86.84, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_052_signature,doc_052,inserted_signature,inserted_signature/doc_052_signature.pdf,1,612.0,792.0,inserted_signature,474.4800011530541,45.12751393230907,594.8420690885788,79.3844101908815,1,"{""mode"": ""top_right"", ""scale"": 0.837}"
+doc_053,doc_053,normal,normal/doc_053.pdf,1,612.0,792.0,normal,,,,,0,
+doc_053_margin,doc_053,altered_margin,altered_margin/doc_053_margin.pdf,1,612.0,792.0,altered_margin,114.91649627685547,73.39039611816406,515.1141357421875,405.38739013671875,1,"{""mode"": ""left_increase"", ""pages"": [0], ""left"": 41.87, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_053_signature,doc_053,inserted_signature,inserted_signature/doc_053_signature.pdf,1,612.0,792.0,inserted_signature,180.1877828801991,356.07867693818866,347.07835761041264,398.7913494538874,1,"{""mode"": ""center"", ""scale"": 1.211}"
+doc_054,doc_054,normal,normal/doc_054.pdf,1,595.28,841.89,normal,,,,,0,
+doc_054_margin,doc_054,altered_margin,altered_margin/doc_054_margin.pdf,1,595.28,841.89,altered_margin,71.28555297851562,85.79103088378906,451.5415954589844,808.2132568359375,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 69.97, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_054_signature,doc_054,inserted_signature,inserted_signature/doc_054_signature.pdf,1,595.28,841.89,inserted_signature,221.88804954792408,335.613814900824,302.06389614211116,356.3270828258601,1,"{""mode"": ""center"", ""scale"": 0.828}"
+doc_055,doc_055,normal,normal/doc_055.pdf,1,595.28,841.89,normal,,,,,0,
+doc_055,doc_055,normal,normal/doc_055.pdf,2,595.28,841.89,normal,,,,,0,
+doc_055_margin,doc_055,altered_margin,altered_margin/doc_055_margin.pdf,1,595.28,841.89,altered_margin,74.41902160644531,10.844999313354492,511.58465576171875,809.866455078125,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -69.25}"
+doc_055_margin,doc_055,altered_margin,altered_margin/doc_055_margin.pdf,2,595.28,841.89,altered_margin,74.41902160644531,85.4000015258789,346.9646911621094,809.866455078125,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -69.25}"
+doc_055_signature,doc_055,inserted_signature,inserted_signature/doc_055_signature.pdf,1,595.28,841.89,inserted_signature,236.64233151958717,423.2669280211406,442.9531135213874,480.16758853765134,1,"{""mode"": ""center"", ""scale"": 1.449}"
+doc_055_signature,doc_055,inserted_signature,inserted_signature/doc_055_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_056,doc_056,normal,normal/doc_056.pdf,1,612.0,792.0,normal,,,,,0,
+doc_056_margin,doc_056,altered_margin,altered_margin/doc_056_margin.pdf,1,612.0,792.0,altered_margin,22.0,81.05010223388672,513.5790405273438,758.572021484375,1,"{""mode"": ""left_decrease"", ""pages"": [0], ""left"": -44.65, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_056_signature,doc_056,inserted_signature,inserted_signature/doc_056_signature.pdf,1,612.0,792.0,inserted_signature,432.1052580126082,692.67006493305,517.9666398531414,716.2178692811067,1,"{""mode"": ""bottom_right"", ""scale"": 0.592}"
+doc_057,doc_057,normal,normal/doc_057.pdf,1,612.0,792.0,normal,,,,,0,
+doc_057_margin,doc_057,altered_margin,altered_margin/doc_057_margin.pdf,1,612.0,792.0,altered_margin,73.88760375976562,21.3179988861084,539.8670654296875,758.4144287109375,1,"{""mode"": ""top_change"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": -43.6, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_057_signature,doc_057,inserted_signature,inserted_signature/doc_057_signature.pdf,1,612.0,792.0,inserted_signature,274.270949785457,339.218100857278,363.06177868201763,354.8037250784828,1,"{""mode"": ""center"", ""scale"": 0.782}"
+doc_058,doc_058,normal,normal/doc_058.pdf,1,595.28,841.89,normal,,,,,0,
+doc_058,doc_058,normal,normal/doc_058.pdf,2,595.28,841.89,normal,,,,,0,
+doc_058_margin,doc_058,altered_margin,altered_margin/doc_058_margin.pdf,1,595.28,841.89,altered_margin,22.0,64.8893051147461,523.3124389648438,809.4379272460938,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1], ""left"": -61.5, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_058_margin,doc_058,altered_margin,altered_margin/doc_058_margin.pdf,2,595.28,841.89,altered_margin,22.0,65.23930358886719,523.3124389648438,809.4379272460938,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1], ""left"": -61.5, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_058_signature,doc_058,inserted_signature,inserted_signature/doc_058_signature.pdf,1,595.28,841.89,inserted_signature,427.83513402324354,13.3760657427745,582.152509546735,56.70793749303027,1,"{""mode"": ""top_right"", ""scale"": 1.211}"
+doc_058_signature,doc_058,inserted_signature,inserted_signature/doc_058_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_059,doc_059,normal,normal/doc_059.pdf,1,612.0,792.0,normal,,,,,0,
+doc_059,doc_059,normal,normal/doc_059.pdf,2,612.0,792.0,normal,,,,,0,
+doc_059_margin,doc_059,altered_margin,altered_margin/doc_059_margin.pdf,1,612.0,792.0,altered_margin,85.8375015258789,72.68090057373047,490.0477294921875,759.5924072265625,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 57.31, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_059_margin,doc_059,altered_margin,altered_margin/doc_059_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_059_signature,doc_059,inserted_signature,inserted_signature/doc_059_signature.pdf,1,612.0,792.0,inserted_signature,400.360283100778,30.789269864856696,606.0,88.4157548308575,1,"{""mode"": ""top_right"", ""scale"": 1.482}"
+doc_059_signature,doc_059,inserted_signature,inserted_signature/doc_059_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_060,doc_060,normal,normal/doc_060.pdf,1,595.28,841.89,normal,,,,,0,
+doc_060_margin,doc_060,altered_margin,altered_margin/doc_060_margin.pdf,1,595.28,841.89,altered_margin,81.26471710205078,63.309539794921875,554.2548217773438,813.87841796875,1,"{""mode"": ""right_decrease"", ""pages"": [0], ""left"": 0.0, ""right"": -24.71, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_060_signature,doc_060,inserted_signature,inserted_signature/doc_060_signature.pdf,1,595.28,841.89,inserted_signature,398.35686629212216,37.22652419819775,520.8564943734652,62.46052998274407,1,"{""mode"": ""top_right"", ""scale"": 0.971}"
+doc_061,doc_061,normal,normal/doc_061.pdf,1,612.0,792.0,normal,,,,,0,
+doc_061,doc_061,normal,normal/doc_061.pdf,2,612.0,792.0,normal,,,,,0,
+doc_061_margin,doc_061,altered_margin,altered_margin/doc_061_margin.pdf,1,612.0,792.0,altered_margin,70.79785919189453,101.9208755493164,544.9309692382812,762.4615478515625,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 27.26}"
+doc_061_margin,doc_061,altered_margin,altered_margin/doc_061_margin.pdf,2,612.0,792.0,altered_margin,70.79785919189453,102.04187774658203,545.5689086914062,762.4615478515625,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 27.26}"
+doc_061_signature,doc_061,inserted_signature,inserted_signature/doc_061_signature.pdf,1,612.0,792.0,inserted_signature,193.5792339512129,369.9279726672795,345.69364005964337,416.58375239926636,1,"{""mode"": ""center"", ""scale"": 1.069}"
+doc_061_signature,doc_061,inserted_signature,inserted_signature/doc_061_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_062,doc_062,normal,normal/doc_062.pdf,1,612.0,792.0,normal,,,,,0,
+doc_062,doc_062,normal,normal/doc_062.pdf,2,612.0,792.0,normal,,,,,0,
+doc_062_margin,doc_062,altered_margin,altered_margin/doc_062_margin.pdf,1,612.0,792.0,altered_margin,22.0,73.63888549804688,525.6770629882812,759.6345825195312,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1], ""left"": -52.79, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_062_margin,doc_062,altered_margin,altered_margin/doc_062_margin.pdf,2,612.0,792.0,altered_margin,22.0,73.93138122558594,519.927001953125,759.6345825195312,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1], ""left"": -52.79, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_062_signature,doc_062,inserted_signature,inserted_signature/doc_062_signature.pdf,1,612.0,792.0,inserted_signature,293.67048275847225,453.4010865762814,357.3042027633699,472.3224768050104,1,"{""mode"": ""center"", ""scale"": 0.613}"
+doc_062_signature,doc_062,inserted_signature,inserted_signature/doc_062_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_063,doc_063,normal,normal/doc_063.pdf,1,595.28,841.89,normal,,,,,0,
+doc_063,doc_063,normal,normal/doc_063.pdf,2,595.28,841.89,normal,,,,,0,
+doc_063_margin,doc_063,altered_margin,altered_margin/doc_063_margin.pdf,1,595.28,841.89,altered_margin,119.8761978149414,66.1005859375,512.7200927734375,719.2416381835938,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 54.6, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_063_margin,doc_063,altered_margin,altered_margin/doc_063_margin.pdf,2,595.28,841.89,altered_margin,119.8761978149414,66.45059204101562,512.0241088867188,580.9920043945312,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 54.6, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_063_signature,doc_063,inserted_signature,inserted_signature/doc_063_signature.pdf,1,595.28,841.89,normal,,,,,0,
+doc_063_signature,doc_063,inserted_signature,inserted_signature/doc_063_signature.pdf,2,595.28,841.89,inserted_signature,365.7123798542785,36.405348978483616,553.3679074837642,81.74962145400988,1,"{""mode"": ""top_right"", ""scale"": 1.753}"
+doc_064,doc_064,normal,normal/doc_064.pdf,1,612.0,792.0,normal,,,,,0,
+doc_064,doc_064,normal,normal/doc_064.pdf,2,612.0,792.0,normal,,,,,0,
+doc_064_margin,doc_064,altered_margin,altered_margin/doc_064_margin.pdf,1,612.0,792.0,altered_margin,73.29602813720703,35.191986083984375,538.840087890625,765.1632690429688,1,"{""mode"": ""top_change"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": -33.65, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_064_margin,doc_064,altered_margin,altered_margin/doc_064_margin.pdf,2,612.0,792.0,altered_margin,73.29602813720703,64.68991088867188,320.260498046875,765.1632690429688,1,"{""mode"": ""top_change"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": -33.65, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_064_signature,doc_064,inserted_signature,inserted_signature/doc_064_signature.pdf,1,612.0,792.0,inserted_signature,380.2710721663656,693.2447002000984,580.1272266893322,747.7835430860785,1,"{""mode"": ""bottom_right"", ""scale"": 1.448}"
+doc_064_signature,doc_064,inserted_signature,inserted_signature/doc_064_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_065,doc_065,normal,normal/doc_065.pdf,1,595.28,841.89,normal,,,,,0,
+doc_065,doc_065,normal,normal/doc_065.pdf,2,595.28,841.89,normal,,,,,0,
+doc_065_margin,doc_065,altered_margin,altered_margin/doc_065_margin.pdf,1,595.28,841.89,altered_margin,65.35449981689453,20.8799991607666,506.7955322265625,813.1912841796875,1,"{""mode"": ""top_change"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": -43.16, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_065_margin,doc_065,altered_margin,altered_margin/doc_065_margin.pdf,2,595.28,841.89,altered_margin,65.35449981689453,21.174999237060547,488.41461181640625,813.1912841796875,1,"{""mode"": ""top_change"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": -43.16, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_065_signature,doc_065,inserted_signature,inserted_signature/doc_065_signature.pdf,1,595.28,841.89,normal,,,,,0,
+doc_065_signature,doc_065,inserted_signature,inserted_signature/doc_065_signature.pdf,2,595.28,841.89,inserted_signature,6.0,251.00152374451375,130.40914204020595,279.77642734564984,1,"{""mode"": ""offset_from_block"", ""scale"": 1.234}"
+doc_066,doc_066,normal,normal/doc_066.pdf,1,612.0,792.0,normal,,,,,0,
+doc_066,doc_066,normal,normal/doc_066.pdf,2,612.0,792.0,normal,,,,,0,
+doc_066_margin,doc_066,altered_margin,altered_margin/doc_066_margin.pdf,1,612.0,792.0,altered_margin,81.76439666748047,65.65959930419922,584.3434448242188,759.8683471679688,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1], ""left"": 0.0, ""right"": -43.47, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_066_margin,doc_066,altered_margin,altered_margin/doc_066_margin.pdf,2,612.0,792.0,altered_margin,81.76439666748047,65.95460510253906,584.3217163085938,759.8683471679688,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1], ""left"": 0.0, ""right"": -43.47, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_066_signature,doc_066,inserted_signature,inserted_signature/doc_066_signature.pdf,1,612.0,792.0,inserted_signature,200.39870425864893,333.45775795766656,289.27220759496663,360.3792936398358,1,"{""mode"": ""center"", ""scale"": 0.704}"
+doc_066_signature,doc_066,inserted_signature,inserted_signature/doc_066_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_067,doc_067,normal,normal/doc_067.pdf,1,612.0,792.0,normal,,,,,0,
+doc_067_margin,doc_067,altered_margin,altered_margin/doc_067_margin.pdf,1,612.0,792.0,altered_margin,72.15274047851562,70.81336975097656,521.2044677734375,402.8103942871094,1,"{""mode"": ""right_decrease"", ""pages"": [0], ""left"": 0.0, ""right"": -59.25, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_067_signature,doc_067,inserted_signature,inserted_signature/doc_067_signature.pdf,1,612.0,792.0,inserted_signature,402.09860286885294,32.559418673674514,592.2136085505512,86.05055826512006,1,"{""mode"": ""top_right"", ""scale"": 1.401}"
+doc_068,doc_068,normal,normal/doc_068.pdf,1,595.28,841.89,normal,,,,,0,
+doc_068_margin,doc_068,altered_margin,altered_margin/doc_068_margin.pdf,1,595.28,841.89,altered_margin,85.7447280883789,86.20793914794922,431.0047607421875,493.13873291015625,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 87.43, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_068_signature,doc_068,inserted_signature,inserted_signature/doc_068_signature.pdf,1,595.28,841.89,inserted_signature,89.19829578960554,514.2796201182431,140.698847087835,527.7609320400019,1,"{""mode"": ""mid_left"", ""scale"": 0.527}"
+doc_069,doc_069,normal,normal/doc_069.pdf,1,595.28,841.89,normal,,,,,0,
+doc_069_margin,doc_069,altered_margin,altered_margin/doc_069_margin.pdf,1,595.28,841.89,altered_margin,38.877838134765625,67.39490509033203,483.3043212890625,815.4146728515625,1,"{""mode"": ""shift_x"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -31.84, ""dy"": 0.0}"
+doc_069_signature,doc_069,inserted_signature,inserted_signature/doc_069_signature.pdf,1,595.28,841.89,inserted_signature,438.5146852208706,708.787049626643,589.28,745.375533936208,1,"{""mode"": ""bottom_right"", ""scale"": 1.384}"
+doc_070,doc_070,normal,normal/doc_070.pdf,1,595.28,841.89,normal,,,,,0,
+doc_070,doc_070,normal,normal/doc_070.pdf,2,595.28,841.89,normal,,,,,0,
+doc_070_margin,doc_070,altered_margin,altered_margin/doc_070_margin.pdf,1,595.28,841.89,normal,,,,,0,
+doc_070_margin,doc_070,altered_margin,altered_margin/doc_070_margin.pdf,2,595.28,841.89,altered_margin,26.63743019104004,125.83297729492188,311.9004821777344,813.332275390625,1,"{""mode"": ""left_decrease"", ""pages"": [1], ""left"": -56.85, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_070_signature,doc_070,inserted_signature,inserted_signature/doc_070_signature.pdf,1,595.28,841.89,inserted_signature,345.82271896355854,740.585040715747,589.28,790.0948407248385,1,"{""mode"": ""bottom_right"", ""scale"": 1.787}"
+doc_070_signature,doc_070,inserted_signature,inserted_signature/doc_070_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_071,doc_071,normal,normal/doc_071.pdf,1,595.28,841.89,normal,,,,,0,
+doc_071_margin,doc_071,altered_margin,altered_margin/doc_071_margin.pdf,1,595.28,841.89,altered_margin,15.30111026763916,73.30481719970703,462.91607666015625,409.3927001953125,1,"{""mode"": ""shift_x"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -53.49, ""dy"": 0.0}"
+doc_071_signature,doc_071,inserted_signature,inserted_signature/doc_071_signature.pdf,1,595.28,841.89,inserted_signature,448.5213456782943,19.07032125734547,565.4720994408895,50.94716387582271,1,"{""mode"": ""top_right"", ""scale"": 1.122}"
+doc_072,doc_072,normal,normal/doc_072.pdf,1,612.0,792.0,normal,,,,,0,
+doc_072,doc_072,normal,normal/doc_072.pdf,2,612.0,792.0,normal,,,,,0,
+doc_072_margin,doc_072,altered_margin,altered_margin/doc_072_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_072_margin,doc_072,altered_margin,altered_margin/doc_072_margin.pdf,2,612.0,792.0,altered_margin,117.54930114746094,66.96128845214844,585.8133544921875,260.60626220703125,1,"{""mode"": ""left_increase"", ""pages"": [1], ""left"": 50.52, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_072_signature,doc_072,inserted_signature,inserted_signature/doc_072_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_072_signature,doc_072,inserted_signature,inserted_signature/doc_072_signature.pdf,2,612.0,792.0,inserted_signature,55.04879104689098,431.6375294838298,110.1015570802561,446.840780481037,1,"{""mode"": ""mid_left"", ""scale"": 0.549}"
+doc_073,doc_073,normal,normal/doc_073.pdf,1,612.0,792.0,normal,,,,,0,
+doc_073,doc_073,normal,normal/doc_073.pdf,2,612.0,792.0,normal,,,,,0,
+doc_073,doc_073,normal,normal/doc_073.pdf,3,612.0,792.0,normal,,,,,0,
+doc_073_margin,doc_073,altered_margin,altered_margin/doc_073_margin.pdf,1,612.0,792.0,altered_margin,12.0,63.958824157714844,487.5653991699219,675.9478149414062,1,"{""mode"": ""shift_x"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -55.71, ""dy"": 0.0}"
+doc_073_margin,doc_073,altered_margin,altered_margin/doc_073_margin.pdf,2,612.0,792.0,altered_margin,12.0,64.30882263183594,487.5653991699219,697.33447265625,1,"{""mode"": ""shift_x"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -55.71, ""dy"": 0.0}"
+doc_073_margin,doc_073,altered_margin,altered_margin/doc_073_margin.pdf,3,612.0,792.0,altered_margin,12.0,64.2563247680664,492.80120849609375,340.6273193359375,1,"{""mode"": ""shift_x"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -55.71, ""dy"": 0.0}"
+doc_073_signature,doc_073,inserted_signature,inserted_signature/doc_073_signature.pdf,1,612.0,792.0,inserted_signature,285.162093834905,331.138166998138,367.74215914033215,355.86639357758196,1,"{""mode"": ""center"", ""scale"": 0.651}"
+doc_073_signature,doc_073,inserted_signature,inserted_signature/doc_073_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_073_signature,doc_073,inserted_signature,inserted_signature/doc_073_signature.pdf,3,612.0,792.0,normal,,,,,0,
+doc_074,doc_074,normal,normal/doc_074.pdf,1,595.28,841.89,normal,,,,,0,
+doc_074_margin,doc_074,altered_margin,altered_margin/doc_074_margin.pdf,1,595.28,841.89,altered_margin,32.384918212890625,67.04444122314453,518.2249755859375,806.15185546875,1,"{""mode"": ""left_decrease"", ""pages"": [0], ""left"": -55.1, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_074_signature,doc_074,inserted_signature,inserted_signature/doc_074_signature.pdf,1,595.28,841.89,inserted_signature,27.22638190448432,330.2055301222605,144.22235604295435,358.57446544433196,1,"{""mode"": ""mid_left"", ""scale"": 0.877}"
+doc_075,doc_075,normal,normal/doc_075.pdf,1,595.28,841.89,normal,,,,,0,
+doc_075,doc_075,normal,normal/doc_075.pdf,2,595.28,841.89,normal,,,,,0,
+doc_075,doc_075,normal,normal/doc_075.pdf,3,595.28,841.89,normal,,,,,0,
+doc_075_margin,doc_075,altered_margin,altered_margin/doc_075_margin.pdf,1,595.28,841.89,altered_margin,74.65483856201172,103.53068542480469,587.4091186523438,814.5127563476562,1,"{""mode"": ""shift_y"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 22.46}"
+doc_075_margin,doc_075,altered_margin,altered_margin/doc_075_margin.pdf,2,595.28,841.89,altered_margin,74.65483856201172,103.75068664550781,537.9392700195312,814.5127563476562,1,"{""mode"": ""shift_y"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 22.46}"
+doc_075_margin,doc_075,altered_margin,altered_margin/doc_075_margin.pdf,3,595.28,841.89,altered_margin,74.65483856201172,177.8546905517578,440.62158203125,814.5127563476562,1,"{""mode"": ""shift_y"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 22.46}"
+doc_075_signature,doc_075,inserted_signature,inserted_signature/doc_075_signature.pdf,1,595.28,841.89,normal,,,,,0,
+doc_075_signature,doc_075,inserted_signature,inserted_signature/doc_075_signature.pdf,2,595.28,841.89,inserted_signature,411.7611941231053,53.087392904561824,473.55677199203996,70.60164759468768,1,"{""mode"": ""top_right"", ""scale"": 0.581}"
+doc_075_signature,doc_075,inserted_signature,inserted_signature/doc_075_signature.pdf,3,595.28,841.89,normal,,,,,0,
+doc_076,doc_076,normal,normal/doc_076.pdf,1,595.28,841.89,normal,,,,,0,
+doc_076_margin,doc_076,altered_margin,altered_margin/doc_076_margin.pdf,1,595.28,841.89,altered_margin,70.40013885498047,63.32112121582031,514.6819458007812,812.9925537109375,1,"{""mode"": ""right_decrease"", ""pages"": [0], ""left"": 0.0, ""right"": -33.61, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_076_signature,doc_076,inserted_signature,inserted_signature/doc_076_signature.pdf,1,595.28,841.89,inserted_signature,349.0750463002976,41.08426075821486,511.7212641002108,73.85181379482742,1,"{""mode"": ""top_right"", ""scale"": 1.372}"
+doc_077,doc_077,normal,normal/doc_077.pdf,1,612.0,792.0,normal,,,,,0,
+doc_077,doc_077,normal,normal/doc_077.pdf,2,612.0,792.0,normal,,,,,0,
+doc_077_margin,doc_077,altered_margin,altered_margin/doc_077_margin.pdf,1,612.0,792.0,altered_margin,50.00505828857422,67.7125244140625,512.2689208984375,755.2274780273438,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -31.96, ""dy"": 0.0}"
+doc_077_margin,doc_077,altered_margin,altered_margin/doc_077_margin.pdf,2,612.0,792.0,altered_margin,50.00505828857422,102.79693603515625,320.260498046875,755.2274780273438,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -31.96, ""dy"": 0.0}"
+doc_077_signature,doc_077,inserted_signature,inserted_signature/doc_077_signature.pdf,1,612.0,792.0,inserted_signature,476.5222180867128,673.4765303436412,569.3022144789277,695.2271522084828,1,"{""mode"": ""bottom_right"", ""scale"": 0.81}"
+doc_077_signature,doc_077,inserted_signature,inserted_signature/doc_077_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_078,doc_078,normal,normal/doc_078.pdf,1,612.0,792.0,normal,,,,,0,
+doc_078,doc_078,normal,normal/doc_078.pdf,2,612.0,792.0,normal,,,,,0,
+doc_078_margin,doc_078,altered_margin,altered_margin/doc_078_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_078_margin,doc_078,altered_margin,altered_margin/doc_078_margin.pdf,2,612.0,792.0,altered_margin,157.12249755859375,78.61328125,534.3108520507812,314.1717834472656,1,"{""mode"": ""left_increase"", ""pages"": [1], ""left"": 75.17, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_078_signature,doc_078,inserted_signature,inserted_signature/doc_078_signature.pdf,1,612.0,792.0,inserted_signature,493.93355042337765,706.5320640054987,566.5702861402815,728.0920845009755,1,"{""mode"": ""bottom_right"", ""scale"": 0.635}"
+doc_078_signature,doc_078,inserted_signature,inserted_signature/doc_078_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_079,doc_079,normal,normal/doc_079.pdf,1,612.0,792.0,normal,,,,,0,
+doc_079_margin,doc_079,altered_margin,altered_margin/doc_079_margin.pdf,1,612.0,792.0,altered_margin,72.43267822265625,65.11308288574219,461.78253173828125,765.13916015625,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 78.87, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_079_signature,doc_079,inserted_signature,inserted_signature/doc_079_signature.pdf,1,612.0,792.0,inserted_signature,223.71498971798533,346.78295533770995,338.05699852942223,367.15662236229326,1,"{""mode"": ""center"", ""scale"": 1.128}"
+doc_080,doc_080,normal,normal/doc_080.pdf,1,612.0,792.0,normal,,,,,0,
+doc_080,doc_080,normal,normal/doc_080.pdf,2,612.0,792.0,normal,,,,,0,
+doc_080_margin,doc_080,altered_margin,altered_margin/doc_080_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_080_margin,doc_080,altered_margin,altered_margin/doc_080_margin.pdf,2,612.0,792.0,altered_margin,34.08877944946289,119.38421630859375,318.1230163574219,760.5916748046875,1,"{""mode"": ""shift_x"", ""pages"": [1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -52.35, ""dy"": 0.0}"
+doc_080_signature,doc_080,inserted_signature,inserted_signature/doc_080_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_080_signature,doc_080,inserted_signature,inserted_signature/doc_080_signature.pdf,2,612.0,792.0,inserted_signature,397.50491814687837,37.54457949827857,488.27532648609747,59.22592480568563,1,"{""mode"": ""top_right"", ""scale"": 0.643}"
+doc_081,doc_081,normal,normal/doc_081.pdf,1,612.0,792.0,normal,,,,,0,
+doc_081,doc_081,normal,normal/doc_081.pdf,2,612.0,792.0,normal,,,,,0,
+doc_081_margin,doc_081,altered_margin,altered_margin/doc_081_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_081_margin,doc_081,altered_margin,altered_margin/doc_081_margin.pdf,2,612.0,792.0,altered_margin,30.245149612426758,86.64851379394531,468.27362060546875,256.65399169921875,1,"{""mode"": ""shift_x"", ""pages"": [1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -57.57, ""dy"": 0.0}"
+doc_081_signature,doc_081,inserted_signature,inserted_signature/doc_081_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_081_signature,doc_081,inserted_signature,inserted_signature/doc_081_signature.pdf,2,612.0,792.0,inserted_signature,6.0,113.2698464052597,164.81002355033365,150.46327199511478,1,"{""mode"": ""offset_from_block"", ""scale"": 1.585}"
+doc_082,doc_082,normal,normal/doc_082.pdf,1,595.28,841.89,normal,,,,,0,
+doc_082,doc_082,normal,normal/doc_082.pdf,2,595.28,841.89,normal,,,,,0,
+doc_082_margin,doc_082,altered_margin,altered_margin/doc_082_margin.pdf,1,595.28,841.89,altered_margin,116.59290313720703,78.0348892211914,515.2880859375,814.1114501953125,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 29.59, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_082_margin,doc_082,altered_margin,altered_margin/doc_082_margin.pdf,2,595.28,841.89,altered_margin,116.59290313720703,78.15589141845703,309.76300048828125,814.1114501953125,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 29.59, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_082_signature,doc_082,inserted_signature,inserted_signature/doc_082_signature.pdf,1,595.28,841.89,normal,,,,,0,
+doc_082_signature,doc_082,inserted_signature,inserted_signature/doc_082_signature.pdf,2,595.28,841.89,inserted_signature,104.18051254126944,48.92725756093766,325.8695042473388,105.57205507406934,1,"{""mode"": ""offset_from_block"", ""scale"": 1.745}"
+doc_083,doc_083,normal,normal/doc_083.pdf,1,612.0,792.0,normal,,,,,0,
+doc_083,doc_083,normal,normal/doc_083.pdf,2,612.0,792.0,normal,,,,,0,
+doc_083_margin,doc_083,altered_margin,altered_margin/doc_083_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_083_margin,doc_083,altered_margin,altered_margin/doc_083_margin.pdf,2,612.0,792.0,altered_margin,64.87062072753906,78.09690856933594,564.7640380859375,761.526611328125,1,"{""mode"": ""right_decrease"", ""pages"": [1], ""left"": 0.0, ""right"": -29.72, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_083_signature,doc_083,inserted_signature,inserted_signature/doc_083_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_083_signature,doc_083,inserted_signature,inserted_signature/doc_083_signature.pdf,2,612.0,792.0,inserted_signature,260.3825681306447,358.22584643167124,470.1898393243982,393.31685129682364,1,"{""mode"": ""center"", ""scale"": 1.705}"
+doc_084,doc_084,normal,normal/doc_084.pdf,1,612.0,792.0,normal,,,,,0,
+doc_084_margin,doc_084,altered_margin,altered_margin/doc_084_margin.pdf,1,612.0,792.0,altered_margin,78.22590637207031,10.809999465942383,531.5206298828125,422.0348205566406,1,"{""mode"": ""shift_y"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -64.38}"
+doc_084_signature,doc_084,inserted_signature,inserted_signature/doc_084_signature.pdf,1,612.0,792.0,inserted_signature,248.14510589121966,360.8951206449054,422.7483333745398,398.79831237615997,1,"{""mode"": ""center"", ""scale"": 1.501}"
+doc_085,doc_085,normal,normal/doc_085.pdf,1,612.0,792.0,normal,,,,,0,
+doc_085,doc_085,normal,normal/doc_085.pdf,2,612.0,792.0,normal,,,,,0,
+doc_085_margin,doc_085,altered_margin,altered_margin/doc_085_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_085_margin,doc_085,altered_margin,altered_margin/doc_085_margin.pdf,2,612.0,792.0,altered_margin,22.0,124.35877990722656,318.1230163574219,762.5472412109375,1,"{""mode"": ""left_decrease"", ""pages"": [1], ""left"": -50.05, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_085_signature,doc_085,inserted_signature,inserted_signature/doc_085_signature.pdf,1,612.0,792.0,inserted_signature,387.3160395845067,677.7189586081726,503.50575299350135,704.5800213855208,1,"{""mode"": ""bottom_right"", ""scale"": 1.098}"
+doc_085_signature,doc_085,inserted_signature,inserted_signature/doc_085_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_086,doc_086,normal,normal/doc_086.pdf,1,612.0,792.0,normal,,,,,0,
+doc_086,doc_086,normal,normal/doc_086.pdf,2,612.0,792.0,normal,,,,,0,
+doc_086_margin,doc_086,altered_margin,altered_margin/doc_086_margin.pdf,1,612.0,792.0,altered_margin,79.12413787841797,150.60289001464844,541.3721923828125,759.3870239257812,1,"{""mode"": ""top_change"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 64.1, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_086_margin,doc_086,altered_margin,altered_margin/doc_086_margin.pdf,2,612.0,792.0,altered_margin,79.12413787841797,150.7148895263672,538.408203125,759.3870239257812,1,"{""mode"": ""top_change"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 64.1, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_086_signature,doc_086,inserted_signature,inserted_signature/doc_086_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_086_signature,doc_086,inserted_signature,inserted_signature/doc_086_signature.pdf,2,612.0,792.0,inserted_signature,206.12297088700507,294.97642434878105,287.7602824914011,307.99106822774274,1,"{""mode"": ""offset_from_block"", ""scale"": 0.815}"
+doc_087,doc_087,normal,normal/doc_087.pdf,1,612.0,792.0,normal,,,,,0,
+doc_087_margin,doc_087,altered_margin,altered_margin/doc_087_margin.pdf,1,612.0,792.0,altered_margin,64.80001831054688,100.60049438476562,542.1752319335938,765.3058471679688,1,"{""mode"": ""shift_y"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 21.3}"
+doc_087_signature,doc_087,inserted_signature,inserted_signature/doc_087_signature.pdf,1,612.0,792.0,inserted_signature,6.0,536.3949606217678,155.15215564522168,569.8029390467117,1,"{""mode"": ""offset_from_block"", ""scale"": 1.035}"
+doc_088,doc_088,normal,normal/doc_088.pdf,1,595.28,841.89,normal,,,,,0,
+doc_088,doc_088,normal,normal/doc_088.pdf,2,595.28,841.89,normal,,,,,0,
+doc_088_margin,doc_088,altered_margin,altered_margin/doc_088_margin.pdf,1,595.28,841.89,normal,,,,,0,
+doc_088_margin,doc_088,altered_margin,altered_margin/doc_088_margin.pdf,2,595.28,841.89,altered_margin,66.37367248535156,73.86854553222656,457.0826721191406,658.90478515625,1,"{""mode"": ""right_increase"", ""pages"": [1], ""left"": 0.0, ""right"": 51.9, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_088_signature,doc_088,inserted_signature,inserted_signature/doc_088_signature.pdf,1,595.28,841.89,normal,,,,,0,
+doc_088_signature,doc_088,inserted_signature,inserted_signature/doc_088_signature.pdf,2,595.28,841.89,inserted_signature,189.431081095666,321.42452244660865,386.0695686867716,369.2555059147154,1,"{""mode"": ""center"", ""scale"": 1.657}"
+doc_089,doc_089,normal,normal/doc_089.pdf,1,612.0,792.0,normal,,,,,0,
+doc_089_margin,doc_089,altered_margin,altered_margin/doc_089_margin.pdf,1,612.0,792.0,altered_margin,30.568639755249023,67.033203125,483.4725341796875,764.4058837890625,1,"{""mode"": ""shift_x"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -37.97, ""dy"": 0.0}"
+doc_089_signature,doc_089,inserted_signature,inserted_signature/doc_089_signature.pdf,1,612.0,792.0,inserted_signature,6.0,419.6672560529871,137.23040461811593,441.8975431740887,1,"{""mode"": ""offset_from_block"", ""scale"": 1.099}"
+doc_090,doc_090,normal,normal/doc_090.pdf,1,595.28,841.89,normal,,,,,0,
+doc_090_margin,doc_090,altered_margin,altered_margin/doc_090_margin.pdf,1,595.28,841.89,altered_margin,81.03338623046875,130.73854064941406,528.7535400390625,477.28350830078125,1,"{""mode"": ""top_change"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 58.47, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_090_signature,doc_090,inserted_signature,inserted_signature/doc_090_signature.pdf,1,595.28,841.89,inserted_signature,300.7411627717062,375.1088815707608,379.4869852444664,396.4483983477302,1,"{""mode"": ""center"", ""scale"": 0.572}"
+doc_091,doc_091,normal,normal/doc_091.pdf,1,612.0,792.0,normal,,,,,0,
+doc_091_margin,doc_091,altered_margin,altered_margin/doc_091_margin.pdf,1,612.0,792.0,altered_margin,123.3989028930664,69.34397888183594,547.7684326171875,756.2561645507812,1,"{""mode"": ""left_increase"", ""pages"": [0], ""left"": 43.32, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_091_signature,doc_091,inserted_signature,inserted_signature/doc_091_signature.pdf,1,612.0,792.0,inserted_signature,6.0,380.9545170291625,161.9888107515343,423.2423274842463,1,"{""mode"": ""offset_from_block"", ""scale"": 1.314}"
+doc_092,doc_092,normal,normal/doc_092.pdf,1,612.0,792.0,normal,,,,,0,
+doc_092,doc_092,normal,normal/doc_092.pdf,2,612.0,792.0,normal,,,,,0,
+doc_092,doc_092,normal,normal/doc_092.pdf,3,612.0,792.0,normal,,,,,0,
+doc_092_margin,doc_092,altered_margin,altered_margin/doc_092_margin.pdf,1,612.0,792.0,altered_margin,22.0,85.61739349365234,536.3274536132812,699.532470703125,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1, 2], ""left"": -62.76, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_092_margin,doc_092,altered_margin,altered_margin/doc_092_margin.pdf,2,612.0,792.0,altered_margin,22.0,85.96739196777344,536.327392578125,655.2125854492188,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1, 2], ""left"": -62.76, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_092_signature,doc_092,inserted_signature,inserted_signature/doc_092_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_092_signature,doc_092,inserted_signature,inserted_signature/doc_092_signature.pdf,2,612.0,792.0,inserted_signature,89.94426675622373,323.4194418111758,171.07165347260917,341.8194676643766,1,"{""mode"": ""mid_left"", ""scale"": 0.598}"
+doc_092_signature,doc_092,inserted_signature,inserted_signature/doc_092_signature.pdf,3,612.0,792.0,normal,,,,,0,
+doc_093,doc_093,normal,normal/doc_093.pdf,1,612.0,792.0,normal,,,,,0,
+doc_093_margin,doc_093,altered_margin,altered_margin/doc_093_margin.pdf,1,612.0,792.0,altered_margin,52.26224136352539,73.36152648925781,459.50628662109375,763.8331909179688,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 89.79, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_093_signature,doc_093,inserted_signature,inserted_signature/doc_093_signature.pdf,1,612.0,792.0,inserted_signature,389.5584622287282,722.0466268375064,557.9321936340984,766.5899420241124,1,"{""mode"": ""bottom_right"", ""scale"": 1.149}"
+doc_094,doc_094,normal,normal/doc_094.pdf,1,612.0,792.0,normal,,,,,0,
+doc_094_margin,doc_094,altered_margin,altered_margin/doc_094_margin.pdf,1,612.0,792.0,altered_margin,86.17762756347656,107.47957611083984,527.4124755859375,561.1640014648438,1,"{""mode"": ""shift_y"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 41.57}"
+doc_094_signature,doc_094,inserted_signature,inserted_signature/doc_094_signature.pdf,1,612.0,792.0,inserted_signature,353.2564767459235,44.5689102092947,530.2471470524586,94.47345998048934,1,"{""mode"": ""top_right"", ""scale"": 1.702}"
+doc_095,doc_095,normal,normal/doc_095.pdf,1,612.0,792.0,normal,,,,,0,
+doc_095,doc_095,normal,normal/doc_095.pdf,2,612.0,792.0,normal,,,,,0,
+doc_095,doc_095,normal,normal/doc_095.pdf,3,612.0,792.0,normal,,,,,0,
+doc_095_margin,doc_095,altered_margin,altered_margin/doc_095_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_095_margin,doc_095,altered_margin,altered_margin/doc_095_margin.pdf,2,612.0,792.0,altered_margin,85.90081024169922,109.42942810058594,532.5048217773438,756.95263671875,1,"{""mode"": ""shift_y"", ""pages"": [1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 36.39}"
+doc_095_margin,doc_095,altered_margin,altered_margin/doc_095_margin.pdf,3,612.0,792.0,normal,,,,,0,
+doc_095_signature,doc_095,inserted_signature,inserted_signature/doc_095_signature.pdf,1,612.0,792.0,inserted_signature,392.285241805998,733.8149828734167,542.0081958260715,768.8852243555962,1,"{""mode"": ""bottom_right"", ""scale"": 1.29}"
+doc_095_signature,doc_095,inserted_signature,inserted_signature/doc_095_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_095_signature,doc_095,inserted_signature,inserted_signature/doc_095_signature.pdf,3,612.0,792.0,normal,,,,,0,
+doc_096,doc_096,normal,normal/doc_096.pdf,1,595.28,841.89,normal,,,,,0,
+doc_096,doc_096,normal,normal/doc_096.pdf,2,595.28,841.89,normal,,,,,0,
+doc_096_margin,doc_096,altered_margin,altered_margin/doc_096_margin.pdf,1,595.28,841.89,altered_margin,83.58000946044922,28.912599563598633,509.77191162109375,812.8822631835938,1,"{""mode"": ""top_change"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": -51.64, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_096_margin,doc_096,altered_margin,altered_margin/doc_096_margin.pdf,2,595.28,841.89,normal,,,,,0,
+doc_096_signature,doc_096,inserted_signature,inserted_signature/doc_096_signature.pdf,1,595.28,841.89,inserted_signature,427.801663239484,54.135912761356295,521.3085985332099,76.40726687684968,1,"{""mode"": ""top_right"", ""scale"": 0.763}"
+doc_096_signature,doc_096,inserted_signature,inserted_signature/doc_096_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_097,doc_097,normal,normal/doc_097.pdf,1,612.0,792.0,normal,,,,,0,
+doc_097_margin,doc_097,altered_margin,altered_margin/doc_097_margin.pdf,1,612.0,792.0,altered_margin,83.82549285888672,78.04933166503906,443.1084289550781,757.4137573242188,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 74.49, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_097_signature,doc_097,inserted_signature,inserted_signature/doc_097_signature.pdf,1,612.0,792.0,inserted_signature,247.50596872229215,449.8599156513416,394.67968254283244,471.9785084798621,1,"{""mode"": ""center"", ""scale"": 1.12}"
+doc_098,doc_098,normal,normal/doc_098.pdf,1,612.0,792.0,normal,,,,,0,
+doc_098,doc_098,normal,normal/doc_098.pdf,2,612.0,792.0,normal,,,,,0,
+doc_098,doc_098,normal,normal/doc_098.pdf,3,612.0,792.0,normal,,,,,0,
+doc_098_margin,doc_098,altered_margin,altered_margin/doc_098_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_098_margin,doc_098,altered_margin,altered_margin/doc_098_margin.pdf,2,612.0,792.0,altered_margin,22.0,82.05001068115234,538.5252075195312,756.70458984375,1,"{""mode"": ""left_decrease"", ""pages"": [1], ""left"": -54.29, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_098_margin,doc_098,altered_margin,altered_margin/doc_098_margin.pdf,3,612.0,792.0,normal,,,,,0,
+doc_098_signature,doc_098,inserted_signature,inserted_signature/doc_098_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_098_signature,doc_098,inserted_signature,inserted_signature/doc_098_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_098_signature,doc_098,inserted_signature,inserted_signature/doc_098_signature.pdf,3,612.0,792.0,inserted_signature,193.59359484805677,152.88564732076003,306.4681153865566,178.41427719956093,1,"{""mode"": ""offset_from_block"", ""scale"": 0.891}"
+doc_099,doc_099,normal,normal/doc_099.pdf,1,612.0,792.0,normal,,,,,0,
+doc_099,doc_099,normal,normal/doc_099.pdf,2,612.0,792.0,normal,,,,,0,
+doc_099_margin,doc_099,altered_margin,altered_margin/doc_099_margin.pdf,1,612.0,792.0,altered_margin,67.03791809082031,79.8504867553711,493.0582275390625,761.124267578125,1,"{""mode"": ""right_increase"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 52.12, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_099_margin,doc_099,altered_margin,altered_margin/doc_099_margin.pdf,2,612.0,792.0,altered_margin,67.03791809082031,111.83082580566406,340.94903564453125,761.124267578125,1,"{""mode"": ""right_increase"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 52.12, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_099_signature,doc_099,inserted_signature,inserted_signature/doc_099_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_099_signature,doc_099,inserted_signature,inserted_signature/doc_099_signature.pdf,2,612.0,792.0,inserted_signature,140.83339459614925,341.1152445605383,365.6317222770871,398.1063698881,1,"{""mode"": ""center"", ""scale"": 1.597}"
+doc_100,doc_100,normal,normal/doc_100.pdf,1,612.0,792.0,normal,,,,,0,
+doc_100,doc_100,normal,normal/doc_100.pdf,2,612.0,792.0,normal,,,,,0,
+doc_100_margin,doc_100,altered_margin,altered_margin/doc_100_margin.pdf,1,612.0,792.0,altered_margin,85.91148376464844,93.84507751464844,539.8211669921875,765.0845336914062,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 21.43}"
+doc_100_margin,doc_100,altered_margin,altered_margin/doc_100_margin.pdf,2,612.0,792.0,altered_margin,85.91148376464844,93.95707702636719,539.8211059570312,765.0845336914062,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 21.43}"
+doc_100_signature,doc_100,inserted_signature,inserted_signature/doc_100_signature.pdf,1,612.0,792.0,inserted_signature,207.20855192570855,400.23445104447717,301.74575659941485,424.3957606437606,1,"{""mode"": ""center"", ""scale"": 0.828}"
+doc_100_signature,doc_100,inserted_signature,inserted_signature/doc_100_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_101,doc_101,normal,normal/doc_101.pdf,1,595.28,841.89,normal,,,,,0,
+doc_101,doc_101,normal,normal/doc_101.pdf,2,595.28,841.89,normal,,,,,0,
+doc_101_margin,doc_101,altered_margin,altered_margin/doc_101_margin.pdf,1,595.28,841.89,altered_margin,119.84020233154297,66.42840576171875,545.17919921875,811.0897827148438,1,"{""mode"": ""left_increase"", ""pages"": [0], ""left"": 39.97, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_101_margin,doc_101,altered_margin,altered_margin/doc_101_margin.pdf,2,595.28,841.89,normal,,,,,0,
+doc_101_signature,doc_101,inserted_signature,inserted_signature/doc_101_signature.pdf,1,595.28,841.89,inserted_signature,49.7040695997986,504.9529961529619,236.60637300954906,543.4522382285619,1,"{""mode"": ""mid_left"", ""scale"": 1.359}"
+doc_101_signature,doc_101,inserted_signature,inserted_signature/doc_101_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_102,doc_102,normal,normal/doc_102.pdf,1,612.0,792.0,normal,,,,,0,
+doc_102,doc_102,normal,normal/doc_102.pdf,2,612.0,792.0,normal,,,,,0,
+doc_102_margin,doc_102,altered_margin,altered_margin/doc_102_margin.pdf,1,612.0,792.0,altered_margin,174.8011932373047,71.00517272949219,525.259521484375,762.5276489257812,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 91.23, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_102_margin,doc_102,altered_margin,altered_margin/doc_102_margin.pdf,2,612.0,792.0,altered_margin,174.8011932373047,71.11717224121094,525.259521484375,762.5276489257812,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 91.23, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_102_signature,doc_102,inserted_signature,inserted_signature/doc_102_signature.pdf,1,612.0,792.0,inserted_signature,231.09297371904137,394.2903555065053,448.6524361559267,456.45020191704396,1,"{""mode"": ""center"", ""scale"": 1.591}"
+doc_102_signature,doc_102,inserted_signature,inserted_signature/doc_102_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_103,doc_103,normal,normal/doc_103.pdf,1,595.28,841.89,normal,,,,,0,
+doc_103,doc_103,normal,normal/doc_103.pdf,2,595.28,841.89,normal,,,,,0,
+doc_103_margin,doc_103,altered_margin,altered_margin/doc_103_margin.pdf,1,595.28,841.89,altered_margin,143.1623992919922,85.02523803710938,582.2670288085938,809.4765014648438,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 62.4, ""dy"": 0.0}"
+doc_103_margin,doc_103,altered_margin,altered_margin/doc_103_margin.pdf,2,595.28,841.89,altered_margin,143.1623992919922,85.31773376464844,581.0250244140625,809.4765014648438,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 62.4, ""dy"": 0.0}"
+doc_103_signature,doc_103,inserted_signature,inserted_signature/doc_103_signature.pdf,1,595.28,841.89,inserted_signature,453.58551335499226,717.3151764964321,589.28,753.340261446434,1,"{""mode"": ""bottom_right"", ""scale"": 1.366}"
+doc_103_signature,doc_103,inserted_signature,inserted_signature/doc_103_signature.pdf,2,595.28,841.89,normal,,,,,0,
+doc_104,doc_104,normal,normal/doc_104.pdf,1,612.0,792.0,normal,,,,,0,
+doc_104,doc_104,normal,normal/doc_104.pdf,2,612.0,792.0,normal,,,,,0,
+doc_104_margin,doc_104,altered_margin,altered_margin/doc_104_margin.pdf,1,612.0,792.0,altered_margin,12.0,79.25160217285156,477.3818664550781,761.6566162109375,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -59.07, ""dy"": 0.0}"
+doc_104_margin,doc_104,altered_margin,altered_margin/doc_104_margin.pdf,2,612.0,792.0,altered_margin,12.0,79.36810302734375,473.5293273925781,761.6566162109375,1,"{""mode"": ""shift_x"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -59.07, ""dy"": 0.0}"
+doc_104_signature,doc_104,inserted_signature,inserted_signature/doc_104_signature.pdf,1,612.0,792.0,inserted_signature,395.4625652567312,12.809971669385863,606.0,57.954450854102376,1,"{""mode"": ""top_right"", ""scale"": 1.447}"
+doc_104_signature,doc_104,inserted_signature,inserted_signature/doc_104_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_105,doc_105,normal,normal/doc_105.pdf,1,595.28,841.89,normal,,,,,0,
+doc_105_margin,doc_105,altered_margin,altered_margin/doc_105_margin.pdf,1,595.28,841.89,altered_margin,12.0,81.76643371582031,444.3002014160156,413.7633972167969,1,"{""mode"": ""shift_x"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -55.81, ""dy"": 0.0}"
+doc_105_signature,doc_105,inserted_signature,inserted_signature/doc_105_signature.pdf,1,595.28,841.89,inserted_signature,57.85700291035106,317.6224060870892,178.61566161231207,345.77077670978827,1,"{""mode"": ""mid_left"", ""scale"": 0.914}"
+doc_106,doc_106,normal,normal/doc_106.pdf,1,612.0,792.0,normal,,,,,0,
+doc_106,doc_106,normal,normal/doc_106.pdf,2,612.0,792.0,normal,,,,,0,
+doc_106_margin,doc_106,altered_margin,altered_margin/doc_106_margin.pdf,1,612.0,792.0,altered_margin,73.25292205810547,14.941801071166992,549.816162109375,663.9707641601562,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -51.25}"
+doc_106_margin,doc_106,altered_margin,altered_margin/doc_106_margin.pdf,2,612.0,792.0,altered_margin,73.25292205810547,57.99401092529297,357.04638671875,139.7877960205078,1,"{""mode"": ""shift_y"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": -51.25}"
+doc_106_signature,doc_106,inserted_signature,inserted_signature/doc_106_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_106_signature,doc_106,inserted_signature,inserted_signature/doc_106_signature.pdf,2,612.0,792.0,inserted_signature,234.49603938874066,342.07958689957957,434.5889711356813,382.7578202767049,1,"{""mode"": ""center"", ""scale"": 1.585}"
+doc_107,doc_107,normal,normal/doc_107.pdf,1,595.28,841.89,normal,,,,,0,
+doc_107,doc_107,normal,normal/doc_107.pdf,2,595.28,841.89,normal,,,,,0,
+doc_107_margin,doc_107,altered_margin,altered_margin/doc_107_margin.pdf,1,595.28,841.89,altered_margin,46.649349212646484,75.63739013671875,480.0237731933594,806.2153930664062,1,"{""mode"": ""shift_x"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": -29.99, ""dy"": 0.0}"
+doc_107_margin,doc_107,altered_margin,altered_margin/doc_107_margin.pdf,2,595.28,841.89,normal,,,,,0,
+doc_107_signature,doc_107,inserted_signature,inserted_signature/doc_107_signature.pdf,1,595.28,841.89,normal,,,,,0,
+doc_107_signature,doc_107,inserted_signature,inserted_signature/doc_107_signature.pdf,2,595.28,841.89,inserted_signature,135.74499583681344,572.1256081497253,326.13315231234355,628.3178407405613,1,"{""mode"": ""offset_from_block"", ""scale"": 1.41}"
+doc_108,doc_108,normal,normal/doc_108.pdf,1,612.0,792.0,normal,,,,,0,
+doc_108,doc_108,normal,normal/doc_108.pdf,2,612.0,792.0,normal,,,,,0,
+doc_108,doc_108,normal,normal/doc_108.pdf,3,612.0,792.0,normal,,,,,0,
+doc_108_margin,doc_108,altered_margin,altered_margin/doc_108_margin.pdf,1,612.0,792.0,altered_margin,146.50369262695312,72.01092529296875,582.0435791015625,755.5934448242188,1,"{""mode"": ""shift_x"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 60.27, ""dy"": 0.0}"
+doc_108_margin,doc_108,altered_margin,altered_margin/doc_108_margin.pdf,2,612.0,792.0,altered_margin,146.50369262695312,72.3009262084961,584.6715698242188,755.5934448242188,1,"{""mode"": ""shift_x"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 60.27, ""dy"": 0.0}"
+doc_108_margin,doc_108,altered_margin,altered_margin/doc_108_margin.pdf,3,612.0,792.0,altered_margin,146.50369262695312,72.3009262084961,584.0115356445312,755.5934448242188,1,"{""mode"": ""shift_x"", ""pages"": [0, 1, 2], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 60.27, ""dy"": 0.0}"
+doc_108_signature,doc_108,inserted_signature,inserted_signature/doc_108_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_108_signature,doc_108,inserted_signature,inserted_signature/doc_108_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_108_signature,doc_108,inserted_signature,inserted_signature/doc_108_signature.pdf,3,612.0,792.0,inserted_signature,6.0,367.1573139793877,98.40453869436622,389.44412294092314,1,"{""mode"": ""offset_from_block"", ""scale"": 0.713}"
+doc_109,doc_109,normal,normal/doc_109.pdf,1,612.0,792.0,normal,,,,,0,
+doc_109,doc_109,normal,normal/doc_109.pdf,2,612.0,792.0,normal,,,,,0,
+doc_109,doc_109,normal,normal/doc_109.pdf,3,612.0,792.0,normal,,,,,0,
+doc_109_margin,doc_109,altered_margin,altered_margin/doc_109_margin.pdf,1,612.0,792.0,altered_margin,86.25282287597656,80.07998657226562,474.8653869628906,702.7431030273438,1,"{""mode"": ""right_increase"", ""pages"": [0], ""left"": 0.0, ""right"": 85.68, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_109_margin,doc_109,altered_margin,altered_margin/doc_109_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_109_margin,doc_109,altered_margin,altered_margin/doc_109_margin.pdf,3,612.0,792.0,normal,,,,,0,
+doc_109_signature,doc_109,inserted_signature,inserted_signature/doc_109_signature.pdf,1,612.0,792.0,inserted_signature,362.138743416316,53.92964128806683,555.4276256463593,84.97604206076808,1,"{""mode"": ""top_right"", ""scale"": 1.786}"
+doc_109_signature,doc_109,inserted_signature,inserted_signature/doc_109_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_109_signature,doc_109,inserted_signature,inserted_signature/doc_109_signature.pdf,3,612.0,792.0,normal,,,,,0,
+doc_110,doc_110,normal,normal/doc_110.pdf,1,612.0,792.0,normal,,,,,0,
+doc_110,doc_110,normal,normal/doc_110.pdf,2,612.0,792.0,normal,,,,,0,
+doc_110_margin,doc_110,altered_margin,altered_margin/doc_110_margin.pdf,1,612.0,792.0,altered_margin,85.92684936523438,20.91499900817871,527.7147827148438,762.2362060546875,1,"{""mode"": ""top_change"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": -48.31, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_110_margin,doc_110,altered_margin,altered_margin/doc_110_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_110_signature,doc_110,inserted_signature,inserted_signature/doc_110_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_110_signature,doc_110,inserted_signature,inserted_signature/doc_110_signature.pdf,2,612.0,792.0,inserted_signature,167.29308904583556,337.6575045542809,322.9190305455645,381.28834886759773,1,"{""mode"": ""center"", ""scale"": 1.103}"
+doc_111,doc_111,normal,normal/doc_111.pdf,1,612.0,792.0,normal,,,,,0,
+doc_111_margin,doc_111,altered_margin,altered_margin/doc_111_margin.pdf,1,612.0,792.0,altered_margin,74.22395324707031,81.66969299316406,561.9044189453125,462.5116882324219,1,"{""mode"": ""right_decrease"", ""pages"": [0], ""left"": 0.0, ""right"": -33.95, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_111_signature,doc_111,inserted_signature,inserted_signature/doc_111_signature.pdf,1,612.0,792.0,inserted_signature,424.5759524546507,723.9169096231851,606.0,760.71367411651,1,"{""mode"": ""bottom_right"", ""scale"": 1.525}"
+doc_112,doc_112,normal,normal/doc_112.pdf,1,612.0,792.0,normal,,,,,0,
+doc_112,doc_112,normal,normal/doc_112.pdf,2,612.0,792.0,normal,,,,,0,
+doc_112_margin,doc_112,altered_margin,altered_margin/doc_112_margin.pdf,1,612.0,792.0,altered_margin,120.30419921875,76.54502868652344,529.9743041992188,760.7976684570312,1,"{""mode"": ""left_increase"", ""pages"": [0], ""left"": 43.27, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_112_margin,doc_112,altered_margin,altered_margin/doc_112_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_112_signature,doc_112,inserted_signature,inserted_signature/doc_112_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_112_signature,doc_112,inserted_signature,inserted_signature/doc_112_signature.pdf,2,612.0,792.0,inserted_signature,169.16562407794228,441.9645792435504,330.48803262952777,482.80569533255937,1,"{""mode"": ""center"", ""scale"": 1.374}"
+doc_113,doc_113,normal,normal/doc_113.pdf,1,612.0,792.0,normal,,,,,0,
+doc_113,doc_113,normal,normal/doc_113.pdf,2,612.0,792.0,normal,,,,,0,
+doc_113_margin,doc_113,altered_margin,altered_margin/doc_113_margin.pdf,1,612.0,792.0,altered_margin,84.43132781982422,78.17302703857422,497.5931091308594,758.8488159179688,1,"{""mode"": ""right_increase"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 47.42, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_113_margin,doc_113,altered_margin,altered_margin/doc_113_margin.pdf,2,612.0,792.0,altered_margin,84.43132781982422,78.52302551269531,497.59326171875,758.8488159179688,1,"{""mode"": ""right_increase"", ""pages"": [0, 1], ""left"": 0.0, ""right"": 47.42, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_113_signature,doc_113,inserted_signature,inserted_signature/doc_113_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_113_signature,doc_113,inserted_signature,inserted_signature/doc_113_signature.pdf,2,612.0,792.0,inserted_signature,6.0,398.61675329589866,233.19007645146436,463.8248739592989,1,"{""mode"": ""offset_from_block"", ""scale"": 1.628}"
+doc_114,doc_114,normal,normal/doc_114.pdf,1,612.0,792.0,normal,,,,,0,
+doc_114,doc_114,normal,normal/doc_114.pdf,2,612.0,792.0,normal,,,,,0,
+doc_114_margin,doc_114,altered_margin,altered_margin/doc_114_margin.pdf,1,612.0,792.0,normal,,,,,0,
+doc_114_margin,doc_114,altered_margin,altered_margin/doc_114_margin.pdf,2,612.0,792.0,altered_margin,22.0,66.4056167602539,453.8547668457031,224.9392852783203,1,"{""mode"": ""left_decrease"", ""pages"": [1], ""left"": -59.84, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_114_signature,doc_114,inserted_signature,inserted_signature/doc_114_signature.pdf,1,612.0,792.0,inserted_signature,50.7491396695348,251.195346638612,190.92074649205088,289.1211195997315,1,"{""mode"": ""mid_left"", ""scale"": 1.277}"
+doc_114_signature,doc_114,inserted_signature,inserted_signature/doc_114_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_115,doc_115,normal,normal/doc_115.pdf,1,612.0,792.0,normal,,,,,0,
+doc_115_margin,doc_115,altered_margin,altered_margin/doc_115_margin.pdf,1,612.0,792.0,altered_margin,154.8780975341797,64.5989761352539,526.5267333984375,482.05609130859375,1,"{""mode"": ""left_increase"", ""pages"": [0], ""left"": 88.36, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_115_signature,doc_115,inserted_signature,inserted_signature/doc_115_signature.pdf,1,612.0,792.0,inserted_signature,409.5757581897339,719.0818075516835,507.07415647249593,745.8531673770059,1,"{""mode"": ""bottom_right"", ""scale"": 0.711}"
+doc_116,doc_116,normal,normal/doc_116.pdf,1,612.0,792.0,normal,,,,,0,
+doc_116_margin,doc_116,altered_margin,altered_margin/doc_116_margin.pdf,1,612.0,792.0,altered_margin,68.14212036132812,77.46499633789062,589.0047607421875,763.3672485351562,1,"{""mode"": ""right_decrease"", ""pages"": [0], ""left"": 0.0, ""right"": -49.56, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_116_signature,doc_116,inserted_signature,inserted_signature/doc_116_signature.pdf,1,612.0,792.0,inserted_signature,388.59723964802623,38.24864909010883,497.1826516321823,67.95597878388737,1,"{""mode"": ""top_right"", ""scale"": 0.815}"
+doc_117,doc_117,normal,normal/doc_117.pdf,1,612.0,792.0,normal,,,,,0,
+doc_117,doc_117,normal,normal/doc_117.pdf,2,612.0,792.0,normal,,,,,0,
+doc_117_margin,doc_117,altered_margin,altered_margin/doc_117_margin.pdf,1,612.0,792.0,altered_margin,85.93437957763672,71.5747299194336,570.2927856445312,763.6323852539062,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1], ""left"": 0.0, ""right"": -31.29, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_117_margin,doc_117,altered_margin,altered_margin/doc_117_margin.pdf,2,612.0,792.0,altered_margin,85.93437957763672,71.87223052978516,423.8385925292969,763.6323852539062,1,"{""mode"": ""right_decrease"", ""pages"": [0, 1], ""left"": 0.0, ""right"": -31.29, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_117_signature,doc_117,inserted_signature,inserted_signature/doc_117_signature.pdf,1,612.0,792.0,inserted_signature,405.62648982365016,727.8190479244112,517.0431243356754,747.1692860937757,1,"{""mode"": ""bottom_right"", ""scale"": 1.043}"
+doc_117_signature,doc_117,inserted_signature,inserted_signature/doc_117_signature.pdf,2,612.0,792.0,normal,,,,,0,
+doc_118,doc_118,normal,normal/doc_118.pdf,1,612.0,792.0,normal,,,,,0,
+doc_118,doc_118,normal,normal/doc_118.pdf,2,612.0,792.0,normal,,,,,0,
+doc_118_margin,doc_118,altered_margin,altered_margin/doc_118_margin.pdf,1,612.0,792.0,altered_margin,147.93460083007812,72.46869659423828,546.8504638671875,765.1303100585938,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 75.02, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_118_margin,doc_118,altered_margin,altered_margin/doc_118_margin.pdf,2,612.0,792.0,altered_margin,147.93460083007812,72.6886978149414,537.8521118164062,765.1303100585938,1,"{""mode"": ""left_increase"", ""pages"": [0, 1], ""left"": 75.02, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_118_signature,doc_118,inserted_signature,inserted_signature/doc_118_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_118_signature,doc_118,inserted_signature,inserted_signature/doc_118_signature.pdf,2,612.0,792.0,inserted_signature,6.0,340.98893840925194,124.64920902185037,372.9248217645094,1,"{""mode"": ""offset_from_block"", ""scale"": 0.922}"
+doc_119,doc_119,normal,normal/doc_119.pdf,1,612.0,792.0,normal,,,,,0,
+doc_119,doc_119,normal,normal/doc_119.pdf,2,612.0,792.0,normal,,,,,0,
+doc_119,doc_119,normal,normal/doc_119.pdf,3,612.0,792.0,normal,,,,,0,
+doc_119,doc_119,normal,normal/doc_119.pdf,4,612.0,792.0,normal,,,,,0,
+doc_119_margin,doc_119,altered_margin,altered_margin/doc_119_margin.pdf,1,612.0,792.0,altered_margin,33.60860061645508,77.0220947265625,529.2926025390625,695.5120239257812,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1, 2, 3], ""left"": -49.56, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_119_margin,doc_119,altered_margin,altered_margin/doc_119_margin.pdf,2,612.0,792.0,altered_margin,33.60860061645508,77.31209564208984,525.6747436523438,661.155029296875,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1, 2, 3], ""left"": -49.56, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_119_margin,doc_119,altered_margin,altered_margin/doc_119_margin.pdf,3,612.0,792.0,altered_margin,33.60860061645508,77.37210083007812,525.6748046875,588.240478515625,1,"{""mode"": ""left_decrease"", ""pages"": [0, 1, 2, 3], ""left"": -49.56, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 0.0, ""dy"": 0.0}"
+doc_119_signature,doc_119,inserted_signature,inserted_signature/doc_119_signature.pdf,1,612.0,792.0,normal,,,,,0,
+doc_119_signature,doc_119,inserted_signature,inserted_signature/doc_119_signature.pdf,2,612.0,792.0,inserted_signature,454.3974455835553,675.7044053619885,597.2361319473621,704.4758341661064,1,"{""mode"": ""bottom_right"", ""scale"": 1.099}"
+doc_119_signature,doc_119,inserted_signature,inserted_signature/doc_119_signature.pdf,3,612.0,792.0,normal,,,,,0,
+doc_119_signature,doc_119,inserted_signature,inserted_signature/doc_119_signature.pdf,4,612.0,792.0,normal,,,,,0,
+doc_120,doc_120,normal,normal/doc_120.pdf,1,612.0,792.0,normal,,,,,0,
+doc_120,doc_120,normal,normal/doc_120.pdf,2,612.0,792.0,normal,,,,,0,
+doc_120_margin,doc_120,altered_margin,altered_margin/doc_120_margin.pdf,1,612.0,792.0,altered_margin,148.47000122070312,74.0405044555664,600.0001831054688,759.3233642578125,1,"{""mode"": ""shift_x"", ""pages"": [0], ""left"": 0.0, ""right"": 0.0, ""top"": 0.0, ""bottom"": 0.0, ""dx"": 62.24, ""dy"": 0.0}"
+doc_120_margin,doc_120,altered_margin,altered_margin/doc_120_margin.pdf,2,612.0,792.0,normal,,,,,0,
+doc_120_signature,doc_120,inserted_signature,inserted_signature/doc_120_signature.pdf,1,612.0,792.0,inserted_signature,82.91624936899828,228.9895150233255,147.11270836061385,247.29739406908254,1,"{""mode"": ""mid_left"", ""scale"": 0.597}"
+doc_120_signature,doc_120,inserted_signature,inserted_signature/doc_120_signature.pdf,2,612.0,792.0,normal,,,,,0,

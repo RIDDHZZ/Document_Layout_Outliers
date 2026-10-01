@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DocuTrace — Document Layout Anomaly Detection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f5f7; --card:#fff; --ink:#1d1d1f; --ink2:#6e6e73; --ink3:#a1a1a6; --line:#e5e5ea;
+  --blue:#0071e3; --blue-soft:rgba(0,113,227,.09);
+  --green:#1f9d55; --green-soft:rgba(52,199,89,.14);
+  --amber:#d97706; --amber-soft:rgba(255,159,10,.16);
+  --red:#e0352b; --red-soft:rgba(255,59,48,.14);
+  --radius:24px;
+  --shadow:0 1px 2px rgba(0,0,0,.04),0 12px 32px rgba(0,0,0,.06);
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Inter","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;line-height:1.5}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+:focus-visible{outline:3px solid rgba(0,113,227,.45);outline-offset:2px;border-radius:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.hidden{display:none!important}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;height:52px;background:rgba(255,255,255,.72);
+  backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.08)}
+nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:600;letter-spacing:-.01em}
+.brand small{color:var(--ink2);font-weight:400;margin-left:10px;font-size:13px}
+.tag{font-size:13px;color:var(--ink2)}
+
+/* hero */
+.hero{text-align:center;padding:88px 0 56px}
+.eyebrow{font-size:15px;font-weight:600;color:var(--blue);letter-spacing:.01em}
+h1{font-size:clamp(40px,7vw,76px);font-weight:700;letter-spacing:-.035em;line-height:1.05;margin:14px auto 18px;max-width:14ch}
+.lead{font-size:clamp(17px,2.2vw,21px);color:var(--ink2);max-width:640px;margin:0 auto 44px;letter-spacing:-.01em}
+
+.drop{background:var(--card);border:1.5px dashed #c7c7cc;border-radius:28px;max-width:640px;margin:0 auto;padding:44px 24px;
+  transition:border-color .2s,background .2s,transform .2s;cursor:pointer;box-shadow:var(--shadow)}
+.drop:hover,.drop.over{border-color:var(--blue);background:#fbfdff}
+.drop.over{transform:scale(1.01)}
+.drop .ico{width:52px;height:52px;margin:0 auto 14px;color:var(--blue)}
+.drop h3{font-size:21px;font-weight:600;letter-spacing:-.02em}
+.drop p{color:var(--ink2);font-size:14px;margin-top:4px}
+.link{color:var(--blue)}
+.file{display:flex;align-items:center;gap:14px;background:var(--card);border-radius:20px;max-width:640px;margin:0 auto;padding:16px 20px;box-shadow:var(--shadow);text-align:left}
+.file .ok{width:36px;height:36px;border-radius:50%;background:var(--green-soft);color:var(--green);display:grid;place-items:center;flex:none}
+.file .meta{flex:1;min-width:0}
+.file .name{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.file .sub{font-size:13px;color:var(--ink2)}
+.file .rm{color:var(--ink2);font-size:14px;padding:6px 10px;border-radius:980px}
+.file .rm:hover{background:var(--bg)}
+.msg{max-width:640px;margin:14px auto 0;font-size:14px;color:var(--red);min-height:1px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--blue);color:#fff;font-weight:500;font-size:17px;
+  padding:13px 28px;border-radius:980px;margin-top:26px;transition:background .2s,transform .15s,opacity .2s}
+.btn:hover:not(:disabled){background:#0077ed}
+.btn:active:not(:disabled){transform:scale(.98)}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--blue);margin-top:0;padding:8px 14px;font-size:15px}
+.btn.ghost:hover{background:var(--blue-soft)}
+.banner{background:var(--amber-soft);color:#7a4500;font-size:14px;text-align:center;padding:10px 16px}
+
+/* processing */
+.proc{max-width:520px;margin:0 auto;background:var(--card);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);text-align:left}
+.proc h3{font-size:21px;font-weight:600;letter-spacing:-.02em;margin-bottom:18px}
+.step{display:flex;align-items:center;gap:14px;padding:9px 0;color:var(--ink3);transition:color .3s}
+.step .dot{width:24px;height:24px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;flex:none;transition:all .3s}
+.step.active{color:var(--ink)}
+.step.active .dot{border-color:var(--blue);border-top-color:transparent;animation:spin .9s linear infinite}
+.step.done{color:var(--ink)}
+.step.done .dot{background:var(--green);border-color:var(--green);color:#fff}
+.step .dot svg{width:13px;height:13px;display:none}
+.step.done .dot svg{display:block}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* results */
+section.results{padding:8px 0 40px}
+.grid2{display:grid;grid-template-columns:1.15fr 1fr;gap:24px;align-items:start}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px}
+.h2{font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-.03em;margin:56px 0 24px}
+.label{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+.seg{display:inline-flex;background:#ededf0;border-radius:980px;padding:3px;gap:2px;flex-wrap:wrap}
+.seg button{padding:6px 14px;border-radius:980px;font-size:13px;font-weight:500;color:var(--ink2);transition:all .2s}
+.seg button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.14)}
+.viewer-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.pages{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.pages button{display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border-radius:980px;font-size:13px;background:var(--bg);color:var(--ink2)}
+.pages button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.pages i{width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block}
+.pages i.bad{background:var(--amber)}
+.page{position:relative;background:#fafafa;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px var(--line),0 6px 20px rgba(0,0,0,.08)}
+.page img{display:block;width:100%;height:auto}
+.box{position:absolute;pointer-events:none;border-radius:3px}
+.box.text{border:1px solid rgba(0,113,227,.55);background:rgba(0,113,227,.08)}
+.box.image{border:2px solid #ff9f0a;background:rgba(255,159,10,.16)}
+.box.hot{border:2.5px solid var(--red);background:var(--red-soft);box-shadow:0 0 0 4px rgba(255,59,48,.12);animation:pulse 2.2s ease-in-out infinite}
+.box.hot span{position:absolute;left:-2px;top:-24px;background:var(--red);color:#fff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;white-space:nowrap}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(255,59,48,.06)}}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;font-size:12.5px;color:var(--ink2)}
+.legend b{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.note{font-size:13px;color:var(--ink2);margin-top:12px}
+
+.status{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.badge{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;flex:none}
+.badge svg{width:28px;height:28px}
+.tone-ok .badge{background:var(--green-soft);color:var(--green)}
+.tone-warn .badge{background:var(--amber-soft);color:var(--amber)}
+.tone-high .badge{background:var(--red-soft);color:var(--red)}
+.status h3{font-size:24px;font-weight:700;letter-spacing:-.025em;line-height:1.15}
+.status p{font-size:14.5px;color:var(--ink2);margin-top:2px}
+.score{font-size:72px;font-weight:700;letter-spacing:-.045em;line-height:1;margin:6px 0 14px;font-variant-numeric:tabular-nums}
+.tone-ok .score{color:var(--green)}.tone-warn .score{color:var(--amber)}.tone-high .score{color:var(--red)}
+.gauge{position:relative;height:8px;border-radius:99px;background:#ececf0;margin:4px 0 8px}
+.gauge .fill{position:absolute;inset:0 auto 0 0;border-radius:99px;transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.tone-ok .fill{background:var(--green)}.tone-warn .fill{background:#ff9f0a}.tone-high .fill{background:var(--red)}
+.gauge .thr{position:absolute;top:-5px;bottom:-5px;width:2px;background:var(--ink);border-radius:2px}
+.gauge-cap{display:flex;justify-content:space-between;font-size:12px;color:var(--ink2)}
+.details{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-radius:16px;overflow:hidden;margin-top:24px}
+.details div{background:var(--card);padding:14px 16px}
+.details dt{font-size:12px;color:var(--ink2)}
+.details dd{font-size:17px;font-weight:600;letter-spacing:-.01em;margin-top:2px}
+.small{font-size:12.5px;color:var(--ink2);margin-top:16px}
+
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.metric{background:var(--card);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.metric .v{font-size:44px;font-weight:700;letter-spacing:-.04em;line-height:1.05;margin:10px 0 4px;font-variant-numeric:tabular-nums}
+.metric .k{font-size:13px;color:var(--ink2)}
+.bar{height:5px;border-radius:9px;background:#ececf0;margin-top:14px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:9px;background:var(--blue);transition:width .8s cubic-bezier(.2,.8,.2,1)}
+.lv-mid .bar i{background:#ff9f0a}.lv-high .bar i{background:var(--red)}
+
+.grid3{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;margin-top:24px}
+.heat{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:16px}
+.cell{aspect-ratio:1.1;border-radius:10px;display:grid;place-items:center;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;transition:background .3s}
+.why p.lead2{font-size:16px;letter-spacing:-.01em;margin:12px 0 20px}
+.contrib{display:grid;gap:12px;margin-bottom:22px}
+.contrib .row{display:grid;grid-template-columns:150px 1fr 44px;align-items:center;gap:12px;font-size:14px}
+.contrib .row em{font-style:normal;color:var(--ink2);text-align:right;font-variant-numeric:tabular-nums}
+.feat{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:14px}
+.feat code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;color:var(--ink)}
+.feat span{color:var(--ink2);white-space:nowrap;font-variant-numeric:tabular-nums}
+.again{text-align:center;margin-top:40px}
+
+footer{border-top:1px solid var(--line);margin-top:56px;padding:36px 0 48px;text-align:center;color:var(--ink2);font-size:13px}
+footer strong{color:var(--ink);font-weight:600}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:900px){
+  .grid2,.grid3{grid-template-columns:1fr}
+  .metrics{grid-template-columns:1fr 1fr}
+  .hero{padding:56px 0 40px}
+  .contrib .row{grid-template-columns:120px 1fr 40px}
+}
+@media(max-width:480px){.metrics{grid-template-columns:1fr}.score{font-size:60px}.brand small{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <div class="brand">DocuTrace<small>Document Layout Anomaly Detection</small></div>
+  <div class="tag">Pattern Recognition Project</div>
+</div></nav>
+<div id="banner" class="banner hidden" role="status"></div>
+
+<main class="wrap">
+  <!-- HERO + UPLOAD -->
+  <section class="hero" id="hero">
+    <p class="eyebrow">Pattern Recognition &amp; Anomaly Detection</p>
+    <h1>Document Layout Anomaly Detection</h1>
+    <p class="lead">Analyze spatial patterns in legal PDFs using bounding-box variance and spatial density to find potential layout anomalies.</p>
+
+    <div id="drop" class="drop" tabindex="0" role="button" aria-label="Upload a PDF">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 17v-6m0 0-2.5 2.5M12 11l2.5 2.5"/></svg>
+      <h3>Drop your PDF here</h3>
+      <p>or <span class="link">browse files</span></p>
+      <p style="margin-top:14px;color:var(--ink3)">PDF only · Maximum 20 MB</p>
+      <input id="input" type="file" accept="application/pdf,.pdf" hidden>
+    </div>
+
+    <div id="file" class="file hidden">
+      <div class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <div class="meta"><div class="name" id="fname"></div><div class="sub" id="fsub"></div></div>
+      <button class="rm" id="rm" type="button">Remove</button>
+    </div>
+    <div id="msg" class="msg" role="alert"></div>
+    <button id="go" class="btn" type="button" disabled>Analyze Document</button>
+  </section>
+
+  <!-- PROCESSING -->
+  <section id="proc" class="hero hidden" style="padding-top:64px">
+    <div class="proc">
+      <h3>Analyzing document…</h3>
+      <div id="steps" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="results hidden">
+    <h2 class="h2" style="margin-top:24px">Analysis</h2>
+    <div class="grid2">
+      <div class="card">
+        <div class="viewer-top">
+          <span class="label">Document preview</span>
+          <div class="seg" id="modes" role="group" aria-label="View mode">
+            <button data-m="original" aria-pressed="false">Original</button>
+            <button data-m="boxes" aria-pressed="true">Bounding Boxes</button>
+            <button data-m="anom" aria-pressed="false">Anomalies</button>
+          </div>
+        </div>
+        <div class="pages" id="pages"></div>
+        <div class="page" id="page"><img id="img" alt="Document page preview"><div id="ov"></div></div>
+        <div class="legend" id="legend"></div>
+        <p class="note" id="viewnote"></p>
+      </div>
+
+      <div class="card" id="statuscard">
+        <div class="status">
+          <div class="badge" id="badge"></div>
+          <div><h3 id="stitle"></h3><p id="ssub"></p></div>
+        </div>
+        <div class="label">Anomaly score</div>
+        <div class="score" id="score">0.00</div>
+        <div class="gauge"><div class="fill" id="fill" style="width:0"></div><div class="thr" id="thr"></div></div>
+        <div class="gauge-cap"><span>Typical</span><span id="thrcap"></span><span>Unusual</span></div>
+        <dl class="details">
+          <div><dt>Affected pages</dt><dd id="d1">–</dd></div>
+          <div><dt>Suspicious region</dt><dd id="d2">–</dd></div>
+          <div><dt>Anomalous regions</dt><dd id="d3">–</dd></div>
+          <div><dt>Pages analyzed</dt><dd id="d4">–</dd></div>
+        </dl>
+        <p class="small">Relative unusualness score (0 = typical, 1 = highly unusual). It is not a probability and not a statement about authenticity.</p>
+      </div>
+    </div>
+
+    <h2 class="h2">Pattern analysis <span id="pgtag" class="label" style="margin-left:8px"></span></h2>
+    <div class="metrics" id="metrics"></div>
+
+    <div class="grid3">
+      <div class="card">
+        <div class="viewer-top" style="margin-bottom:0">
+          <span class="label">Spatial density (4 × 4)</span>
+          <div class="seg" id="gmodes" role="group" aria-label="Heatmap mode">
+            <button data-g="density" aria-pressed="true">Density</button>
+            <button data-g="dev" aria-pressed="false">vs. normal</button>
+          </div>
+        </div>
+        <div class="heat" id="heat"></div>
+        <p class="note" id="heatnote"></p>
+      </div>
+      <div class="card why">
+        <span class="label" id="whytag">Why was this flagged?</span>
+        <p class="lead2" id="explain"></p>
+        <div class="label" style="margin-bottom:12px">Main contributing deviations</div>
+        <div class="contrib" id="contrib"></div>
+        <div class="label" style="margin-bottom:4px">Largest feature deviations</div>
+        <div id="feats"></div>
+        <p class="small">SD = standard deviations from the normal reference pages the model was trained on.</p>
+      </div>
+    </div>
+
+    <div class="again"><button class="btn ghost" id="again" type="button">Analyze another document</button></div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <strong>DocuTrace</strong> · Pattern Recognition &amp; Anomaly Detection<br>
+  Analyzes document layout patterns. It does not determine legal authenticity.
+</div></footer>
+
+<script>
+"use strict";
+const API = "http://localhost:8000";          // FastAPI backend
+const MAX_MB = 20;
+const $ = (s) => document.querySelector(s);
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+const ICON_OK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+const ICON_WARN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.8 19.5h18.4z"/><path d="M12 10v4.5M12 17.4v.1"/></svg>';
+
+let file = null;
+const S = { pages: [], result: null, cur: 0, mode: "boxes", gmode: "density" };
+
+/* ---------- helpers ---------- */
+function errMsg(d) {
+  if (d && d.error && d.error.message) return d.error.message;
+  if (d && typeof d.detail === "string") return d.detail;
+  return "The document could not be analyzed.";
+}
+async function jget(path) {
+  const r = await fetch(API + path);
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(errMsg(d));
+  return d;
+}
+function position(b) {                              // same rule as the backend explanation
+  const cx = (b[0] + b[2]) / 2, cy = (b[1] + b[3]) / 2;
+  const v = cy < 1/3 ? "top" : cy < 2/3 ? "middle" : "bottom";
+  const h = cx < 1/3 ? "left" : cx < 2/3 ? "center" : "right";
+  if (v === "middle" && h === "center") return "Center";
+  const t = (v === "middle" ? "" : v + "-") + h;
+  return t.charAt(0).toUpperCase() + t.slice(1);
+}
+const pct = (x) => Math.round(Math.max(0, Math.min(1, x || 0)) * 100);
+const level = (x) => x < 0.33 ? ["Low deviation", ""] : x < 0.66 ? ["Moderate deviation", "lv-mid"] : ["High deviation", "lv-high"];
+const GROUPS = { margin: "Margin position", bbox: "Bounding-box variance", density: "Spatial density",
+                 signature: "Signature-related elements", count: "Element count", other: "Other" };
+function pretty(n) { return n.replace(/_/g, " "); }
+function fmtSize(b) { return b > 1048576 ? (b / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(b / 1024)) + " KB"; }
+
+/* ---------- health ---------- */
+fetch(API + "/api/health").then(r => r.json()).then(d => {
+  if (!d.model_loaded) banner("The anomaly model is not trained yet. Run: python -m ml.train");
+}).catch(() => banner("Cannot reach the analysis server at " + API + ". Start it with: python -m uvicorn backend.app.main:app --port 8000"));
+function banner(t) { const b = $("#banner"); b.textContent = t; b.classList.remove("hidden"); }
+
+/* ---------- upload ---------- */
+const drop = $("#drop"), input = $("#input");
+drop.addEventListener("click", () => input.click());
+drop.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); input.click(); } });
+["dragenter", "dragover"].forEach(ev => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach(ev => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.remove("over"); }));
+drop.addEventListener("drop", (e) => setFile(e.dataTransfer.files[0]));
+input.addEventListener("change", () => setFile(input.files[0]));
+$("#rm").addEventListener("click", clearFile);
+
+function setFile(f) {
+  $("#msg").textContent = "";
+  if (!f) return;
+  if (!/\.pdf$/i.test(f.name) || (f.type && f.type !== "application/pdf")) return void ($("#msg").textContent = "Please choose a PDF file.");
+  if (f.size > MAX_MB * 1048576) return void ($("#msg").textContent = `This file is larger than ${MAX_MB} MB.`);
+  if (f.size === 0) return void ($("#msg").textContent = "This file is empty.");
+  file = f;
+  $("#fname").textContent = f.name; $("#fsub").textContent = fmtSize(f.size) + " · PDF";
+  drop.classList.add("hidden"); $("#file").classList.remove("hidden"); $("#go").disabled = false;
+}
+function clearFile() {
+  file = null; input.value = "";
+  $("#file").classList.add("hidden"); drop.classList.remove("hidden"); $("#go").disabled = true; $("#msg").textContent = "";
+}
+
+/* ---------- processing ---------- */
+const STEP_LABELS = ["PDF uploaded", "Layout elements and spatial features extracted", "Compared with the normal layout pattern"];
+function setSteps(active) {                       // active: 0..2 running, 3 = all done
+  $("#steps").innerHTML = STEP_LABELS.map((t, i) =>
+    `<div class="step ${i < active ? "done" : i === active ? "active" : ""}"><span class="dot">${CHECK}</span>${t}</div>`).join("");
+}
+function view(which) {
+  $("#hero").classList.toggle("hidden", which !== "hero");
+  $("#proc").classList.toggle("hidden", which !== "proc");
+  $("#results").classList.toggle("hidden", which !== "results");
+}
+
+$("#go").addEventListener("click", analyze);
+async function analyze() {
+  if (!file) return;
+  view("proc"); setSteps(0); window.scrollTo({ top: 0, behavior: "smooth" });
+  try {
+    const fd = new FormData(); fd.append("file", file);
+    let r;
+    try { r = await fetch(API + "/api/analyze", { method: "POST", body: fd }); }
+    catch { throw new Error("Cannot reach the analysis server. Make sure the backend is running."); }
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(errMsg(d));
+    setSteps(1);
+
+    let st, t0 = Date.now();
+    for (;;) {
+      await sleep(600);
+      st = await jget("/api/analysis/" + d.analysis_id);
+      if (st.status === "failed") throw new Error(st.error && st.error.message || "The document could not be analyzed.");
+      if (st.step === "scoring") setSteps(2);
+      if (st.status === "done") break;
+      if (Date.now() - t0 > 180000) throw new Error("The analysis took too long. Please try a smaller document.");
+    }
+    const n = st.result.pages_analyzed;
+    S.pages = await Promise.all(Array.from({ length: n }, (_, i) => jget(`/api/analysis/${d.analysis_id}/page/${i + 1}`)));
+    S.result = st.result;
+    setSteps(3); await sleep(350);
+    showResults();
+  } catch (e) {
+    view("hero"); $("#msg").textContent = e.message;
+  }
+}
+
+/* ---------- results ---------- */
+function showResults() {
+  S.cur = S.pages.reduce((b, p, i) => p.score > S.pages[b].score ? i : b, 0);   // most unusual page first
+  S.mode = "boxes"; S.gmode = "density";
+  syncSeg("#modes", "m", S.mode); syncSeg("#gmodes", "g", S.gmode);
+  view("results");
+  renderStatus(); renderPageTabs(); renderPage();
+  document.querySelectorAll(".card,.metric,.h2").forEach((el, i) => { el.classList.add("reveal"); setTimeout(() => el.classList.add("in"), 60 + i * 60); });
+  $("#results").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function renderStatus() {
+  const r = S.result, bad = r.overall_status === "potential_anomaly";
+  const tone = !bad ? "ok" : r.overall_score >= 0.8 ? "high" : "warn";
+  const card = $("#statuscard"); card.className = "card tone-" + tone;
+  $("#badge").innerHTML = bad ? ICON_WARN : ICON_OK;
+  $("#stitle").textContent = bad ? "Potential layout anomaly" : "No significant anomaly";
+  $("#ssub").textContent = bad ? "Potentially unusual spatial pattern detected." : "No significant spatial deviation detected.";
+  countUp($("#score"), r.overall_score);
+  requestAnimationFrame(() => { $("#fill").style.width = pct(r.overall_score) + "%"; });
+  $("#thr").style.left = pct(r.threshold) + "%";
+  $("#thrcap").textContent = "threshold " + r.threshold.toFixed(2);
+
+  const ap = r.anomalous_pages || [];
+  $("#d1").textContent = ap.length === 0 ? "None" : ap.length === 1 ? `Page ${ap[0]} of ${r.pages}` : "Pages " + ap.join(", ");
+  const flagged = (r.regions || []).filter(x => x.flagged).sort((a, b) => b.score - a.score);
+  $("#d2").textContent = flagged.length ? position(flagged[0].bbox_norm) : (bad ? "Page-wide" : "None");
+  $("#d3").textContent = flagged.length;
+  $("#d4").textContent = r.pages_analyzed;
+}
+function countUp(el, to) {
+  const t0 = performance.now(), dur = 900;
+  (function tick(t) {
+    const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+    el.textContent = (to * e).toFixed(2);
+    if (k < 1) requestAnimationFrame(tick);
+  })(t0);
+}
+
+function renderPageTabs() {
+  const box = $("#pages"); box.innerHTML = "";
+  if (S.pages.length < 2) return;
+  S.pages.forEach((p, i) => {
+    const b = document.createElement("button");
+    b.setAttribute("aria-pressed", i === S.cur);
+    b.innerHTML = `<i class="${p.is_anomalous ? "bad" : ""}"></i>Page ${p.page} · ${p.score.toFixed(2)}`;
+    b.onclick = () => { S.cur = i; renderPageTabs(); renderPage(); };
+    box.appendChild(b);
+  });
+}
+
+function renderPage() {
+  const p = S.pages[S.cur];
+  const img = $("#img"), pageBox = $("#page");
+  pageBox.style.aspectRatio = `${p.page_width} / ${p.page_height}`;
+  img.style.display = ""; img.onerror = () => { img.style.display = "none"; };
+  img.src = API + p.image_url;
+  renderOverlay(p); renderMetrics(p); renderHeat(p); renderWhy(p);
+  $("#pgtag").textContent = S.pages.length > 1 ? "· Page " + p.page : "";
+}
+
+function renderOverlay(p) {
+  const ov = $("#ov"); ov.innerHTML = "";
+  const add = (b, cls, label) => {
+    const d = document.createElement("div"); d.className = "box " + cls;
+    d.style.cssText = `left:${b[0] * 100}%;top:${b[1] * 100}%;width:${(b[2] - b[0]) * 100}%;height:${(b[3] - b[1]) * 100}%`;
+    if (label) { const s = document.createElement("span"); s.textContent = label; d.appendChild(s); }
+    ov.appendChild(d);
+  };
+  let note = "", legend = "";
+  if (S.mode === "boxes") {
+    p.elements.forEach(e => add(e.bbox_norm, e.kind === "text" ? "text" : "image"));
+    legend = `<span><b style="background:rgba(0,113,227,.4)"></b>Text line</span><span><b style="background:rgba(255,159,10,.6)"></b>Image / non-text element</span>`;
+    note = `${p.elements.length} layout elements detected on this page.`;
+  } else if (S.mode === "anom") {
+    const hot = p.is_anomalous ? p.regions.filter(r => r.flagged) : [];
+    hot.forEach(r => add(r.bbox_norm, "hot", `${position(r.bbox_norm)} · ${r.score.toFixed(2)}`));
+    legend = `<span><b style="background:var(--red)"></b>Suspicious region</span>`;
+    note = hot.length ? `${hot.length} suspicious region${hot.length > 1 ? "s" : ""} on this page.`
+         : p.is_anomalous ? "This page deviates as a whole (for example a shifted margin) without a single outlying element."
+         : "This page is within the normal range. No suspicious region.";
+  } else { note = "Original page as uploaded."; }
+  $("#legend").innerHTML = legend; $("#viewnote").textContent = note;
+}
+
+function renderMetrics(p) {
+  const g = p.group_deviation || {};
+  const items = [["Bounding-box variance", g.bbox], ["Spatial density", g.density], ["Margin deviation", g.margin]];
+  $("#metrics").innerHTML = items.map(([k, v]) => {
+    const [txt, cls] = level(v || 0);
+    return `<div class="metric ${cls}"><div class="label">${k}</div><div class="v">${pct(v)}%</div><div class="k">${txt}</div><div class="bar"><i style="width:${pct(v)}%"></i></div></div>`;
+  }).join("") + `<div class="metric"><div class="label">Elements detected</div><div class="v">${p.elements.length}</div><div class="k">on this page</div></div>`;
+  document.querySelectorAll(".metric").forEach((el, i) => { el.classList.add("reveal"); setTimeout(() => el.classList.add("in"), 40 + i * 50); });
+}
+
+function renderHeat(p) {
+  const dg = p.density_grid, dev = S.gmode === "dev";
+  const vals = (dev ? dg.z_vs_normal : dg.values).flat();
+  const max = dev ? Math.max(3, ...vals.map(Math.abs)) : Math.max(...vals, 1e-9);
+  $("#heat").style.gridTemplateColumns = `repeat(${dg.cols},1fr)`;
+  $("#heat").innerHTML = vals.map(v => {
+    let bg, fg = "var(--ink)";
+    if (dev) {
+      const a = Math.min(1, Math.abs(v) / max) * .85;
+      bg = v >= 0 ? `rgba(255,59,48,${a})` : `rgba(0,113,227,${a})`;
+      if (a > .5) fg = "#fff";
+    } else {
+      const a = v / max;
+      bg = `rgba(0,113,227,${.06 + a * .8})`; if (a > .55) fg = "#fff";
+    }
+    return `<div class="cell" style="background:${bg};color:${fg}">${dev ? (v > 0 ? "+" : "") + v.toFixed(1) : Math.round(v * 100) + "%"}</div>`;
+  }).join("");
+  $("#heatnote").textContent = dev
+    ? "Red = more elements than normal pages have in this cell, blue = fewer (in standard deviations)."
+    : "Share of this page's elements whose centre falls in each cell (top-left = top-left of the page).";
+}
+
+function renderWhy(p) {
+  $("#whytag").textContent = p.is_anomalous ? "Why was this flagged?" : "How this page was assessed";
+  $("#explain").textContent = p.explanation;
+  const g = Object.entries(p.group_deviation || {}).sort((a, b) => b[1] - a[1]).slice(0, 3);
+  $("#contrib").innerHTML = g.map(([k, v]) =>
+    `<div class="row"><span>${GROUPS[k] || k}</span><div class="bar" style="margin:0"><i style="width:${pct(v)}%"></i></div><em>${pct(v)}%</em></div>`).join("");
+  $("#feats").innerHTML = (p.top_features || []).slice(0, 3).map(f =>
+    `<div class="feat"><code>${pretty(f.feature)}</code><span>${f.z > 0 ? "+" : ""}${f.z.toFixed(1)} SD</span></div>`).join("");
+}
+
+/* ---------- controls ---------- */
+function syncSeg(sel, key, val) { document.querySelectorAll(sel + " button").forEach(b => b.setAttribute("aria-pressed", b.dataset[key] === val)); }
+$("#modes").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; S.mode = b.dataset.m; syncSeg("#modes", "m", S.mode); renderOverlay(S.pages[S.cur]); });
+$("#gmodes").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; S.gmode = b.dataset.g; syncSeg("#gmodes", "g", S.gmode); renderHeat(S.pages[S.cur]); });
+$("#again").addEventListener("click", () => { clearFile(); S.pages = []; S.result = null; view("hero"); window.scrollTo({ top: 0, behavior: "smooth" }); });
+</script>
+</body>
+</html>
