@@ -21,6 +21,7 @@ import pandas as pd
 import yaml
 from sklearn.ensemble import IsolationForest
 from sklearn.impute import SimpleImputer
+from sklearn.neighbors import LocalOutlierFactor
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
@@ -60,9 +61,16 @@ def fit(feats: pd.DataFrame, elems: pd.DataFrame, cfg: dict) -> dict:
     ztr, zva = pre.transform(clean(dtr)), pre.transform(clean(dva))
 
     mc = cfg["model"]
-    model = IsolationForest(n_estimators=int(mc["n_estimators"]), max_samples=mc["max_samples"],
-                            contamination=mc["contamination"], max_features=float(mc["max_features"]),
-                            random_state=seed).fit(ztr)
+    mtype = str(mc.get("type", "isolation_forest")).lower()
+    if mtype == "lof":
+        # novelty=True lets the fitted model score unseen pages; fitted on train-normal only
+        model = LocalOutlierFactor(n_neighbors=int(mc.get("lof_neighbors", 20)), novelty=True).fit(ztr)
+    elif mtype == "isolation_forest":
+        model = IsolationForest(n_estimators=int(mc["n_estimators"]), max_samples=mc["max_samples"],
+                                contamination=mc["contamination"], max_features=float(mc["max_features"]),
+                                random_state=seed).fit(ztr)
+    else:
+        raise ValueError(f"Unknown model.type '{mtype}' (use 'isolation_forest' or 'lof')")
 
     raw_tr, raw_va = -model.score_samples(ztr), -model.score_samples(zva)
     pct = float(cfg["threshold"]["percentile"])
@@ -102,12 +110,12 @@ def fit(feats: pd.DataFrame, elems: pd.DataFrame, cfg: dict) -> dict:
         "features": fcols,
         "feature_groups": assign_groups(fcols, cfg),
         "preprocessing": {"imputer": "median", "scaler": "StandardScaler", "fitted_on": "train-normal pages"},
-        "model": {"type": "IsolationForest", **{k: mc[k] for k in mc}},
+        "model": {**{k: mc[k] for k in mc}, "type": mtype},
         "threshold": {"method": cfg["threshold"]["method"], "percentile": pct,
                       "raw": thr, "fitted_on": "validation-normal pages"},
         "score_norm": {"lo": lo, "hi": hi,
                        "formula": "clip((raw - lo) / (hi - lo), 0, 1); hi = lo + 2*(threshold_raw - lo); threshold -> 0.5",
-                       "raw_definition": "raw = -IsolationForest.score_samples(z)"},
+                       "raw_definition": "raw = -score_samples(z) of the fitted model (" + mtype + ")"},
         "reference_stats": ref_stats,
         "region_reference": region_ref,
         "cell_reference": cell_ref,
@@ -146,6 +154,7 @@ def main():
     art = fit(feats, elems, cfg)
     save(art, cfg)
     fc = art["feature_config"]
+    print(f"Model: {fc['model']['type']}")
     print(f"Trained on {fc['dataset']['train_normal_pages']} normal pages, "
           f"{fc['dataset']['n_features']} features.")
     print(f"Validation {fc['threshold']['percentile']:.0f}th percentile threshold (raw) = {fc['threshold']['raw']:.4f}")

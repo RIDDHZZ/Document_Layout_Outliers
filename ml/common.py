@@ -26,6 +26,8 @@ DEFAULTS: dict = {
     # always land in the same split (leakage control).
     "split": {"train": 0.6, "val": 0.2, "test": 0.2},
     "model": {
+        "type": "isolation_forest",   # "isolation_forest" | "lof"  (the other one is used for --compare)
+        "lof_neighbors": 20,
         "n_estimators": 300,
         "max_samples": "auto",
         "contamination": "auto",   # only affects .predict(); we threshold ourselves

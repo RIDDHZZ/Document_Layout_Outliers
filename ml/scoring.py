@@ -17,7 +17,7 @@ class Detector:
     def __init__(self, models_dir: str | Path):
         d = Path(models_dir)
         self.pre = joblib.load(d / "scaler.pkl")          # Pipeline(median imputer, StandardScaler)
-        self.model = joblib.load(d / "anomaly_model.pkl")  # IsolationForest
+        self.model = joblib.load(d / "anomaly_model.pkl")  # IsolationForest or LocalOutlierFactor (config model.type)
         with open(d / "feature_config.json", "r", encoding="utf-8") as f:
             self.cfg = json.load(f)
         self.features: list[str] = self.cfg["features"]

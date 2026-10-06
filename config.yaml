@@ -41,3 +41,6 @@ features:
   grid_rows: 4
   grid_cols: 4
   local_density_radius: 0.15      # normalized radius for local density
+
+model:
+  type: lof

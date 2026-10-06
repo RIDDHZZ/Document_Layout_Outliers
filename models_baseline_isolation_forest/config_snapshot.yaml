@@ -12,8 +12,6 @@ split:
   val: 0.2
   test: 0.2
 model:
-  type: lof
-  lof_neighbors: 20
   n_estimators: 300
   max_samples: auto
   contamination: auto

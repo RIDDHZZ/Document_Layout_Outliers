@@ -161,13 +161,38 @@ def run(cfg: dict, feats: pd.DataFrame | None = None, elems: pd.DataFrame | None
     }
 
     if compare:
+        from sklearn.ensemble import IsolationForest
         from sklearn.neighbors import LocalOutlierFactor
         tr = feats[(feats["variant"] == "normal") & feats["source_doc_id"].isin(split["train"])]
         va = feats[(feats["variant"] == "normal") & feats["source_doc_id"].isin(split["val"])]
-        lof = LocalOutlierFactor(n_neighbors=20, novelty=True).fit(det.zscores(tr))
-        r_va = -lof.score_samples(det.zscores(va))
-        r_ev = -lof.score_samples(det.zscores(ev))
-        result["comparison_lof"] = binary_metrics(ev["y"], r_ev, float(np.percentile(r_va, det.cfg["threshold"]["percentile"])))
+        mc = det.cfg["model"]
+        if mc.get("type", "isolation_forest") == "lof":
+            other = IsolationForest(n_estimators=int(mc["n_estimators"]), max_samples=mc["max_samples"],
+                                    contamination=mc["contamination"], max_features=float(mc["max_features"]),
+                                    random_state=int(det.cfg["random_state"])).fit(det.zscores(tr))
+            key = "comparison_isolation_forest"
+        else:
+            other = LocalOutlierFactor(n_neighbors=int(mc.get("lof_neighbors", 20)), novelty=True).fit(det.zscores(tr))
+            key = "comparison_lof"
+        r_va = -other.score_samples(det.zscores(va))
+        r_ev = -other.score_samples(det.zscores(ev))
+        result[key] = binary_metrics(ev["y"], r_ev, float(np.percentile(r_va, det.cfg["threshold"]["percentile"])))
+        result["primary_model"] = mc.get("type", "isolation_forest")
+
+        # Model selection on VALIDATION documents only (labeled altered pages are used for comparison,
+        # never for fitting), so the choice between detectors does not depend on the test set.
+        from sklearn.metrics import roc_auc_score
+        vl = feats[feats["source_doc_id"].isin(split["val"])]
+        vl = vl[(vl["variant"] == "normal") | (vl["label"] == 1)]
+        yv = (vl["label"] == 1).astype(int)
+        if yv.nunique() == 2:
+            result["validation_comparison"] = {
+                "n_normal": int((yv == 0).sum()), "n_anomalous": int((yv == 1).sum()),
+                "primary_model": mc.get("type", "isolation_forest"),
+                "primary_roc_auc": float(roc_auc_score(yv, det.raw(vl))),
+                "other_model": "isolation_forest" if key == "comparison_isolation_forest" else "lof",
+                "other_roc_auc": float(roc_auc_score(yv, -other.score_samples(det.zscores(vl)))),
+            }
 
     with open(rep_dir / "metrics.json", "w", encoding="utf-8") as f:
         json.dump(result, f, indent=2)

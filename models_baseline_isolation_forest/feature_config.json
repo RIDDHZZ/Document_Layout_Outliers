@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-06T05:05:03+00:00",
+  "created_utc": "2026-09-30T05:42:11+00:00",
   "random_state": 42,
   "features": [
     "left_margin_mean",
@@ -177,8 +177,7 @@
     "fitted_on": "train-normal pages"
   },
   "model": {
-    "type": "lof",
-    "lof_neighbors": 20,
+    "type": "IsolationForest",
     "n_estimators": 300,
     "max_samples": "auto",
     "contamination": "auto",
@@ -187,14 +186,14 @@
   "threshold": {
     "method": "percentile",
     "percentile": 95.0,
-    "raw": 1.4844020533864934,
+    "raw": 0.5896483069469755,
     "fitted_on": "validation-normal pages"
   },
   "score_norm": {
-    "lo": 0.9642747132909552,
-    "hi": 2.0045293934820316,
+    "lo": 0.37972926766618936,
+    "hi": 0.7995673462277615,
     "formula": "clip((raw - lo) / (hi - lo), 0, 1); hi = lo + 2*(threshold_raw - lo); threshold -> 0.5",
-    "raw_definition": "raw = -score_samples(z) of the fitted model (lof)"
+    "raw_definition": "raw = -IsolationForest.score_samples(z)"
   },
   "reference_stats": {
     "left_margin_mean": {

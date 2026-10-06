@@ -1,0 +1,4 @@
+Experiment,Normal,Anomalous,Precision,Recall,F1,ROC-AUC
+overall,43,59,0.667,0.034,0.065,0.728
+margin_alteration,43,35,0.5,0.029,0.054,0.645
+signature_insertion,43,24,0.5,0.042,0.077,0.85
